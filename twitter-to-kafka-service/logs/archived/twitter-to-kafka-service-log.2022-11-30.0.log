@@ -1,0 +1,191 @@
+2022-11-30 09:58:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 7196 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-30 09:58:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-30 09:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.59 seconds (JVM running for 3.548)
+2022-11-30 09:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-30 09:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Maroc, Morocco, World cup, Coupe du monde]
+2022-11-30 09:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-30 09:58:32 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Maroc, Morocco, World cup, Coupe du monde]
+2022-11-30 09:58:36 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Morocco
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @bitcom_exchange @bitcom_exchange #BITWorldCupWizard
+UID 2288928 https://t.co/0lIQ8WgvNv
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @goal: Who has been the best player at the World Cup so far? 🤔 https://t.co/WlxQbSo4Nd
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @i24NEWS_EN: Loss met with singing, dancing and fireworks 
+
+Throughout the night, citizens across Iran demonstrated against the governme…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @franceinter @GIMS Ben si ça se refuse…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Layyonme: Premier league greater than FIFA World Cup ,agreed? https://t.co/XbGkhoe3k9
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text mbappe e asi https://t.co/PZKxz2j4ho
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ESPNFC: Who has been the best player at the World Cup so far? 🤔 https://t.co/TZAgFeVQrQ
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @0x499: ⚽0x499 x @Gate_Nft Fantasy Football Mystery Box Giveaway
+
+🎉 @Gate_Nft is having a football event, and 20 people will be randomly…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FaruqBashar: The entire Chelsea squad in the World Cup: 3 Goals
+
+Marcus Rashford: 3 Goals https://t.co/xiv3gLzdLX
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @THENFTSTAR: 20,000 U prize for above 1200 football fans⚽!!
+Let's cheer on @neymarjr World Cup journey together🇧🇷.
+Raffle 1:https://t.co…
+2022-11-30 09:58:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @UpshotTowers: The 1930 World Cup was absolutely mental. 
+
+The refs wore suits, the Bolivians played in berets, and the Romanian team wa…
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text They gave this rat 20 quid to say he’s a Liverpool fan! 🤣🤪 https://t.co/r1RIC77vHS
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text check it @DonkeyBetzKing @Hossin_mahsa @903550072xjh @fextvofficial @Anurag00612623 @CryptoGodnes @Thekripto2 @nownowrou7 @darkjay3 @FriedEggssss @Umairsheikh456 @addyap618 https://t.co/fK4oKPQ24x
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Trust_Dice: Check out our new promotion for the Fifa World Cup 2022!! ⚽️⚽️
+
+https://t.co/g3Oa97gkCU https://t.co/bjxr3kybkO
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Let’s take a look at how our Tree World Cup is shaping up 🌳 Voting for the semi-finals open today! #NationalTreeWeek https://t.co/lzNrWc2lp9
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @DonCorleone_22 @Morris_Monye Joke let him qualify first
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @MercatoPlein https://t.co/24aLZVmwFP
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @moow2earn: MOOW #FIFAWorldCup2022 Day 12 🏆
+
+⚽️ @HNS_CFF 🇭🇷 x 🇧🇪 @BelRedDevils
+⚽️ @CanadaSoccerEN 🇨🇦 x 🇲🇦 @EnMaroc
+⚽️ @jfa_samuraiblue…
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Revolutionland: FROM CONTENDERS TO #REVO WORLD CUP CHAMPION!
+
+@IndiGG_DAO 🇮🇳 https://t.co/oswsbOPXjt
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @0x499: ⚽0x499 x @Gate_Nft Fantasy Football Mystery Box Giveaway
+
+🎉 @Gate_Nft is having a football event, and 20 people will be randomly…
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text They did it! @Cleyton_Alves_ @waterm6lon_ @2fDmBtDG0v2RFPS @Augustine_Iwu @homamanide @Yehia87082193 @dionysus151515 @gXLJPzXIgHlBrg7 @DenisZenchenkoZ @BahtiyarYangib2 @umutbtmn @tp39871497o @bananacityx https://t.co/63QUQRuihV
+2022-11-30 09:58:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AfricaFactsZone: Liberia's President George Weah and First Lady, Clar Weah celebrate with their son, US Player, Timothy Weah on USA's q…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @acphnz Yes, very pleasing series!
+
+Today's situation doesn't matter at all. But SA v Zim in the World Cup did ... and I'd be pretty cheesed off if @BLACKCAPS were knocked out of a World Cup after getting themselves into a winning position, only to just miss out on this arbitrary rule.
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PhilFoden: What a night! Absolutely buzzin’ to score my first goal in the World Cup! ⚽️ Come on England! 🦁🏴󠁧󠁢󠁥󠁮󠁧󠁿 https://t.co/3rYoSXzH…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ditebogomailula 😭😭my sister this world cup is not one to bet on
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PMichealberry @ManUtd @MarcusRashford They’ll be laughing on Twitter 😭 as if that’s the problem
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SuperEx_VietNam: ⚽️SuperEx World Cup⚽️
+🌟Trận đấu Hôm nay🌟
+⏱ 22:00 
+  🇦🇺 Úc Vs Đan Mạch 🇩🇰
+Quy tắc:
+✅Like & Retweet
+✅Tag 3 người bạn và…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Cudey1: Wales haven’t underachieved. We’re a tiny nation of 3m people with no World Cup pedigree at all. The achievement was getting th…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jenny_Szn: It’s World Cup Season!
+
+Place your World Cup predictions on the surest matches & Earn bigger with PARIPESA!
+
+Sign up using:…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @terryflewers Yea, but joint top
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ovshake42 That is because we have never won any world championship after 2011. India has taken part in many memorable test series in past few years, I can't really think of any 50-over series that stands out. Next T20 World Cup or Test Championship win would be massive whenever that happen
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RMCDecouverte: 🚨 NOUVEAU !
+🐫 Vincent Lagaf’ et Bruce Jouanny partent en road trip au Maroc pour comparer l’ancienne et la nouvelle géné…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SkyFootball: Adidas have confirmed no contact was made between the World Cup matchball and Cristiano Ronaldo, thanks to a 500Hz IMU sen…
+2022-11-30 09:58:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @burger_cities: World Cup2022 is Approaching⚽️
+
+New Channel「⚽️world-cup」in 🍔Discord 
+Why not go to discord and discuss with your friends…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MadridPreeti: Cristiano Ronaldo has been substituted off for 2 consecutive games now by Santos In the World Cup, Did anyone see him thr…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text You'll never sing that... https://t.co/KomsE7ack8
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sportbible: Christian Pulisic's goal took the USA to the next round of the World Cup. 
+
+Then when he got injured and went to hospital h…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @JeffOnTheRight Its not islamophobia, islamic regime in Iran is murdering iranian citizens including children! That is the true Islam!
+I, as an iranian, was supporting USA! And am extremely happy about the match result!
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joelbortey: 🇬🇭 Based on Ghana’s last two games, Otto Addo’s style of play is seen as more fast & direct. 
+
+At the top left of the graph…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MiguelDelaney: Clubs to have supplied England World Cup goals
+
+17 - Spurs (9 scorers)
+14 - Man Utd (8)
+13 - Liverpool (6)
+7 - West Ham…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @terryflewers: No player has scored more World Cup goals than Marcus Rashford so far this #FIFAWorldCup 🔥 https://t.co/4Zu49eRaTk
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @_BeFootball: Le Real Madrid a acheté plusieurs fois des joueurs après les périodes Coupe du Monde. Qui pourrait être celui de 2022 ? 🧐…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Itss_Utsav Hope 2023 world cup ache se khele aur jeet bhi jaye. Selection sahi ho bs players ki
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @JackPittBrooke @MrTomMcDermott Rashford has to play
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text W https://t.co/hL76PbHTXS
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Layyonme: Premier league greater than FIFA World Cup ,agreed? https://t.co/XbGkhoe3k9
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text FIFA WORLD CUP QATAR🇶🇦 2022
+
+Matchday 11
+🇹🇳 Tunisia v France 🇫🇷 
+
+Powered by: Azar paints • Valvoline engine oil • Sintex Tanks • Showmax • Givers Herbal Centre • Lawson Herbal Centre • PSD PLUS • PETROSOL
+
+#FIFAWorldCup  #Qatar2022      
+#MGLQatar2022 #AdomSports https://t.co/SbaDEcANzm
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CNN: "People are celebrating their own team losing."
+
+Watch: Videos show Iranians celebrating the United States' World Cup match win ag…
+2022-11-30 09:58:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Football__Tweet: Luke Shaw learned of his grandmother's death on the eve of England's first match in this World Cup. 🙏 
+
+The defender w…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @WeLoveNATO https://t.co/vKxzZxP3s4
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ESPNFC: FIRST WORLD CUP GOAL FOR PHIL FODEN! 🏴󠁧󠁢󠁥󠁮󠁧󠁿 https://t.co/kKji6z2WkQ
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ibeats_io: WORLD CUP PREDICTIONS !!⚽️
+Let’s predict the score of matches.
+
+🎁Description:
+- WL for user who can guess right score 
+- 10…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @0x499: ⚽0x499 x @Gate_Nft Fantasy Football Mystery Box Giveaway
+
+🎉 @Gate_Nft is having a football event, and 20 people will be randomly…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @UTDTrey: Rashford top scorer, Bruno already the best player, Casemiro dominating for Brazil, Lisandro Martinez saving Messi’s World Cup…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PiersUncensored @piersmorgan @TalkTV Its the honesty for me. Which country is morally right to judge another? It is what it is.😎
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @talkSPORT 🔔
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kerprovost: Comment ça: "côté français" ? A moins de 20 km des côts africaines, c'est bien "côté africain" avec port sûr de débarquemen…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Model Ivana Knoll Says Qatar Locals Accepting Of Sexy Outfits At World Cup https://t.co/RJW2JeZImm
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @wearecultdao: As one of the loudest DAOs in DeFi, @OKX have invited us to their World Cup giveaway! ⚽️
+
+Follow the link (desktop only)…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @louhayl pq pas en plus c'était sympa le Maroc
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Adom1063fm: FIFA WORLD CUP QATAR🇶🇦 2022
+
+Matchday 11
+🇹🇳 Tunisia v France 🇫🇷 
+
+Powered by: Azar paints • Valvoline engine oil • Sintex T…
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Layyonme: Premier league greater than FIFA World Cup ,agreed? https://t.co/XbGkhoe3k9
+2022-11-30 09:58:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Missy__Crypto: $50 to someone 💛🍘🥫
+
+- RT & Follow @Auth3MetaMirror
+
+Ends in 12 hours 
+-------------
+
+Welcome to join https://t.co/EdjJGP…

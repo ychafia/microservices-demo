@@ -1,0 +1,490 @@
+2022-11-18 09:45:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 25616 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:45:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:45:17 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-11-18 09:45:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 20888 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:45:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:45:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.155 seconds (JVM running for 1.715)
+2022-11-18 09:45:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 09:45:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:45:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 09:45:32 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:45:35 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 09:45:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-18 09:45:36 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:31)
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:89)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:40)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:39)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-18 09:48:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 21100 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:48:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:48:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.168 seconds (JVM running for 1.735)
+2022-11-18 09:48:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 09:48:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:48:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 09:48:56 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:49:00 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 09:50:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 19460 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:50:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.183 seconds (JVM running for 1.759)
+2022-11-18 09:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 09:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 09:50:28 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:50:32 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 21536 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.171 seconds (JVM running for 1.774)
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 09:55:27 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:55:29 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-18 09:55:29 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:31)
+Caused by: org.json.JSONException: JSONObject["data"] not found.
+	at org.json.JSONObject.get(JSONObject.java:587)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:160)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:108)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.run(TwitterToKafkaApplication.java:39)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 7084 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.212 seconds (JVM running for 1.772)
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 09:56:12 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 09:56:17 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 15:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 27472 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 15:44:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 15:44:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 2.302 seconds (JVM running for 3.474)
+2022-11-18 15:44:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 15:44:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 15:44:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 15:44:03 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 15:44:11 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 徹底攻略Java SE 11 Gold問題集[1Z0-816]対応 志賀 澄人/株式会社ソキウス・ジャパン インプレス https://t.co/FRAnXahSfX
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @teuuuuuuuuuuuu @sseraphini Estuda uma linguagem mais madura, isso vai te dar uma base mais forte, por mais que seja complicado encontrar um curso com boa didática. Vê Java ou C#
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SaifShamim: I am starting a Job Oriented Java & J2EE training which will include frameworks like Spring-boot, Hibernate & Microservices…
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BotCheckerCL: Buen dia 🤖
+
+Te gusta lo que hacemos?
+Te gustaría ser miembro?
+
+Buscamos 🙌 y 🧠 (voluntarios)
+
+- Programadores (javascript,…
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Join our dynamic, talented team Romania as a #softwaredeveloper. Use your SQL, Java, and XML skills to help us deliver applications that drive healthcare forward: https://t.co/HZuuFHUE5r https://t.co/UsHOpanE38
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I hope in the future #javascript has interfaces like java  to complete his oop. I love  oop concept since i learn java to build android app. https://t.co/af0rCND206
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @KeyWestBruce https://t.co/aHwPphFciG
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Fabricio_Rebelo: Bloqueio de contas empresariais, sem processo, sem crime, sem defesa, sem vista aos advogados? Sim, agora temos.
+
+Nem…
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @thundraio: MerLoc: Debug Lambdas with real data🔥 MerLoc supports #Java, #Go, #Python, #NodeJS & #dotnet runtimes & works with @goserver…
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text But I'm not intending to pass the Python subject. I wanna repeat to memorise everything as much as possible. Because I like Python. HTML, PHP and Java I'll need to keep practice by myself through time too.
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text IM BACK
+GUYS I CAN FIX THIS I TOOK A CLASS ON JAVA!
+2022-11-18 15:44:54 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vikasrajputin: SOLID principles are probably the most important design principles in OOP languages like Java, Python, C#, etc.
+
+But, mo…
+2022-11-18 15:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 21372 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 15:58:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 15:58:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.786 seconds (JVM running for 2.715)
+2022-11-18 15:58:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 15:58:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 15:58:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 15:58:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Java, Microservices, Kafka, Elasticsearch]
+2022-11-18 15:58:40 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @KAFKA_Dev Nope
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Klopt https://t.co/M8Q5sFRo2M
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text JAVA DEVELOPER https://t.co/uudzP4g2Er
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 😎 @scastraining está contratando en Remoto un Programador/a Python AWS (💰~30000€/Anual) (🌎WorldWide).
+#trabajoremoto #remotejobs #java #python 
+
+Aplica aquí 👇
+https://t.co/hQKZuavT78
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RemotoList: 😎 @scastraining está contratando en Remoto un Programador/a Python AWS (💰~30000€/Anual) (🌎WorldWide).
+#trabajoremoto #remot…
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @NONONOexe いしきをてばなす
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @vikasrajputin: SOLID principles are probably the most important design principles in OOP languages like Java, Python, C#, etc.
+
+But, mo…
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Luos_io POM QUEEN live #ProofOfMeme 
+
+Chart: https://t.co/JVxWZy5jnv
+
+Liquidity is Burnt: https://t.co/guq1KyiOmf
+
+Contract Rennounced : https://t.co/OYW9vIu0jD
+
+Telegram: https://t.co/MaSJJ6lavy
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AmschelKavka: Played a lot of pool, taken long walks, drunk a lot of beer. 
+
+Franz Kafka, 1907.
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @kindrobot_org Je trouve qu'il y a pas 36 manière de répondre a un problème en Java perso. Si tu fais de la POO t'as forcément un pattern giga standard pour résoudre ton pb d'archi.
+
+Je me sens moins expressif et moins déterminant dans l'orientation de la codebaze.
+
+Ça aussi ça me soule un peu.
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #RAPtiel KAFKA_Dev verwijderde EEN tweet! Alweer één.
+
+#roebelreptiel #buikspreker https://t.co/vtGqHyZv3d
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Zeyna6072426: Ne güzel de anlatıyor sabrı Franz Kafka. 
+ 
+“Sevdiğin her şey muhtemelen kaybolacak, ama sonunda sevgi başka bir şekilde…
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @VoteAngryNow: Start with what is right rather than what is acceptable.
+  -Franz Kafka
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text eu te odeio java, odeio mais ainda ter que fazer as linhas no caderno
+2022-11-18 15:59:25 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @siirsozu: "Ölümün olduğu bu dünyada, hiçbir şey çok da ciddi değildir aslında..."
+
+Franz Kafka
+2022-11-18 16:03:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication using Java 1.8.0_231 on LAPTOP-86U4U8ED with PID 23952 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-11-18 16:03:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-18 16:03:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 1.832 seconds (JVM running for 2.959)
+2022-11-18 16:03:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-11-18 16:03:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - [Maroc, Morocco, World cup, Coupe du monde]
+2022-11-18 16:03:17 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Hello microservices
+2022-11-18 16:03:17 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Maroc, Morocco, World cup, Coupe du monde]
+2022-11-18 16:03:24 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Morocco
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook__China: [Support] 2022 카타르 월드컵 SBS 생방송 광고 서포트 🇰🇷
+📺방송사: SBS
+⏰방송시간: 2022 FIFA 월드컵 개막식
+
+2022 Qatar World Cup SBS Live Broadcastin…
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @talkSPORT The world cup is about  enjoying  the occasion, for supporters, if this happened in a European  country ,it would be against human rights ,what is the fun to go there ,total con .
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text England goalkeeper Aaron Ramsdale said on Friday he hoped England can perform well enough at the World Cup that supporters will not need a drink to enjoy themselves, after FIFA confirmed alcoholic beer will not be sold at stadiums. https://t.co/1KTZmUtKHg
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ジョングク、カタールでもお肉🥓🥩を食されたようで😆安心した〜🙌🏻
+ダイエットなんてしないでたんと食べて〜💜 https://t.co/BpTqlIbzWm
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 2020 Euros excitement >>> this corrupt World Cup
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FPLFledgling: After having your 7th glass of coke at the World Cup because there's no alcohol available https://t.co/SK8VfO1EBb
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Qatar2022 i would much rather have this World Cup in Blackpool than Qatar at this point
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ArobaseGiovanny @JamieJackson___ De tt il prendra sa retraite si il gagne la coupe du monde
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PolandChartmys BANGTAN WORLD CUP
+ARMY TEAM POLAND
+#bangtanwordcup 
+#ArmyTeamPoland https://t.co/LvSUZNnlMK
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @MaanoMadima No need for an Algorithm. As it stands Brazil are favourates according to the bookies. Brazil with other South American and African teams will be the greater threat in the closing minutes, as they will adapt better to the intense heat. Also Brazil has some fiery youngsters 🔥🇧🇷
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @IrishTimes: Wales is on the verge of its Italia ’90 moment. This rousing song is Cymru’s proud World Cup anthem https://t.co/vgvvit2nAq
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @FOX13News https://t.co/WPpcTKXM5T
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @FIFAcom y’all are getting dragged, nice choice on the World Cup buddy @SeppBlatter 👍🏽
+2022-11-18 16:03:30 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AlbicelesteTalk: This is how Thiago Almada and his family celebrated his World Cup call up. ❤️ 
+
+https://t.co/yDj1ldoPUi
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSMyWings_Col Tenedores
+
+🔐 ARMY TEAM COLOMBIA 
+🔑 BANGTAN WORLD CUP
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Your Chance to get $750 to your Cash App Account!
+
+Clcik Here: https://t.co/y6AW5yZ3V9 https://t.co/D6KcfIpSOP
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nytimes: Breaking News: Qatar abruptly reversed its beer policy for the World Cup, and will sell only a nonalcoholic option at stadiums…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @CommeIvoir A babiere
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @433 Bald choice.
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @LucyG0DTweeter: @EricCryptoman Who will win the #QatarWorldCup2022 ? 🌚⚽️
+
+Bet on the Winning Team and win💹
+
+@laeebinu_erc Betting Dapp…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BTSFondosARMYCo: 🌐⚔️⚽ COMENZAMOS
+
+#ARMYColombia 🇨🇴
+Oficialmente damos inicio al partido que llevará a Colombia a la final del torneo de…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WayneRooney: Argentina look dangerous. That's why they are my favourites to win the World Cup. Read my tournament preview for @TimesSpo…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Qatar bans sale of alcohol at World Cup stadiums, in U-turn two days before 1st game https://t.co/mozeqe9jcJ via @timesofisrael
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo béisbol
+BANGTAN WORLD CUP
+ARMY TEAM COLOMBIA
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Not anymore it won't https://t.co/b4FuqMS5dV
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoadQatar_WC: ☁️WELCOME TO THE ROADQATAR - AIRDROP CAMPAIGN☁️
+
+⚽️Let's accompany ROADQATAR in the real “Road to Qatar" of WORLD CUP 202…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MojorCom: ⚽️FIFA WORLD CUP QATAR 2022 🇶🇦
+
+         “GUESS THE WINNER” 
+
+🔖Pick the TEAM/COUNTRY of your choice! And stand your chance to…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @_RapperJK: The restaurant, Maru Korean Restaurant BBQ in Qatar, posted an IG story and post thanking Jungkook for visiting their restau…
+2022-11-18 16:03:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook_SNS: Maru Korean BBQ Restaurant in Qatar posted about Jungkook's visit last night being an honor.
+
+"BTS Jungkook, we are great…
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSArmyZA ARMY TEAM SOUTH AFRICA
+🌐BANGTAN WORLD CUP🌐
+#BTSTEAMSOUTHAFRICA
+#BTSWorldCupSAfrica https://t.co/Pyewsm1sGG
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BarcaTimes: WORLD CUP BOUND ⚡ https://t.co/2LXW0IvN7s
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Chelsea Working On Arsen Zakharyan’s Deal, Hakim Ziyech To prove Himself At World Cup https://t.co/W5mnn2DYgA
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Fcb_s_a_m Spain have zero chance this World Cup.
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SkyBet @MicahRichards @GNev2 Looks promising. Although, anything could happen!
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @espn: World Cup organizers banned the sale of alcohol around stadiums in Qatar after last-minute showdown talks, FIFA announced on Frid…
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text What are you saying?😂 https://t.co/N1ke7ODLpC
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo Voleibol 
+
+BANGTAN WORLD CUP
+ ARMY TEAM COLOMBIA (@BTS_twt)
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @freecashcom: 💸 $100 GIVEAWAY - Guess the score! ⚽
+
+▶️ RT + Follow
+▶️ Guess the score (only 1 answer allowed before the game started)
+
+T…
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PolandChartmys: 🌐BANGTAN WORLD CUP🌐
+
+Polska 🇵🇱 vs Południowa Afryka🇿🇦
+Spotify playlist (lajkujcie playlistę)
+
+Slowa klucze:
+BANGTAN WOR…
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text The eight stadiums which will host matches at the 2022 World Cup in Qatar 
+
+◾Lusail Iconic Stadium 
+◾Al-Bayt Stadium 
+◾Education City Stadium 
+◾Ahmad Bin Ali Stadium 
+◾Khalifa International Stadium
+◾Al Thumama Stad
+◾Stad 974
+#QatarWorldCup2022
+#Qatar
+#FIFAWorldCupQatar2022 https://t.co/yKPx5i8Enj
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Happy Independence Day Morocco 🇲🇦
+
+#moroccoindependenceday #celebration #Morocco https://t.co/Hlmcfwn8qi
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @2022_QatarWC Them all beer company need to pull out of world cup advertising
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lloris, Koundé, Varane, Saliba, Theo; Tchouaméni, Camavinga; Benzema, Griezmann; Dembelé, Mbappé. https://t.co/wYn0KhxARU
+2022-11-18 16:03:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Rove_to: PLAYΞRS: Living 3D avatars for World Cup 2022
+
+- 10,000 3D-generative avatars
+- Living NFTs: happy/sad when their teams win/lo…
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @barcacentre: Watch: Baldé's beautiful reaction after hearing he's going to the World Cup in Qatar. 🤩
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ESPNFC: Messi's new signature World Cup boots 🤩 https://t.co/f97Uw1yvtG
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text It's almost time for the World Cup. Enjoy delicious Stumbo Soccer Pops while watching your favourite team.
+#stumboflavaz 
+#soccerpops 
+#soccer 
+#WorldCup2022 https://t.co/pfEBBuuKSk
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sportbible: On this day in 2009, Thierry Henry ruined Ireland’s World Cup dreams with THAT infamous handball 👀
+
+The biggest robbery of…
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sergiup8: Alejandro Baldé va à la coupe du monde 🔥 https://t.co/pJ40pFbDr4
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TomFornelli: As an effort to show support, I plan to drink a lot of beer while watching the World Cup from home. I don't care if the fi…
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @433: Hard to believe we won't see this trio at the World Cup 💔 https://t.co/yvlkumKCbi
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @unusual_whales Awful decision to play there but money talks.
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @MOBOX_Official @CoinMarketCap @BNBCHAIN 0x70B10743Ec8EeCEbfd0Dd32A54b3718Be355b3D2
+
+@Radz_91
+@akunkriptooo
+@thelazt16
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KookCharts: We still didn’t realized how big is Jeon Jungkook being the MAIN PERFORMER at FIFA World Cup. A Korean man from Busan at 25…
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @JZig12 Should call @elonmusk for a quick fix.
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @EpihinS ааааа.. ну почитаем шо он про Катар скажет
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TeslaAndDoge @unusual_whales Just the most watched in the world: soccer!
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook_SNS: Maru Korean BBQ Restaurant in Qatar posted about Jungkook's visit last night being an honor.
+
+"BTS Jungkook, we are great…
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TLDRNewsGlobal Hahahahahahaah
+2022-11-18 16:03:33 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @WilliamHill Kane #WHFreeBet
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoadQatar_WC: ☁️WELCOME TO THE ROADQATAR - AIRDROP CAMPAIGN☁️
+
+⚽️Let's accompany ROADQATAR in the real “Road to Qatar" of WORLD CUP 202…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I think a lot of people took the wrong message from a bunch of us doomsaying last night about Twitter. We’re waiting for the inevitable downtime we’re gonna face this weekend from the World Cup. It’s like the night before an MMO gets shut down.
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Blaqqkoffi: Mohammed Salisu & Mohammed Muntari playing somewhere in Nima some few years back
+
+Salisu will represent Ghana 🇬🇭 at the Wor…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @sardeenfiend @SethDillon What does the World Cup have to do with it?
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @disclosetv: JUST IN - Qatar bans alcoholic beverages around World Cup stadiums. https://t.co/t0uJrfzU3Q
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCGameOfficial: ⚡️The ultimate World Cup betor is on the hunt at https://t.co/75wFXK261p! #FIFAWorldCup⚽️
+
+With every bet, you'll have…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text World Cup 2022: Where to watch every game on BBC and ITV https://t.co/mLSZCwFpLq
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WayneRooney: Argentina look dangerous. That's why they are my favourites to win the World Cup. Read my tournament preview for @TimesSpo…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text They should giveaway official team gear 👀 https://t.co/nqBXUDyl2Q
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Kungekua na world cup ya dryspell ningechezea kenya🚶🚶
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Where to watch FIFA World Cup 2022 opening ceremony and subsequent action
+https://t.co/V1VxLKQFKg
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Esqueer_: I don't think Twitter will last through the weekend. Twitter is restricting employee access to all its buildings through the…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo Golf
+
+BANGTAN WORLD CUP
+ARMY TEAM COLOMBIA
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PSG_inside: 🌍🇲🇦
+
+Le Maroc d'@AchrafHakimi s'est imposé 3-0 🆚 la Géorgie en match amical.
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @bollywood_life: BTS Jungkook at FIFA World Cup 2022: Golden Maknae has cutest reaction as a little girl at Qatar mall treats him to his…
+2022-11-18 16:03:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @guardian Its going to be the only top level football that won't cost you. Totally the wrong place to play it, but players don't decide where they play.
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Amine_000: J’ai attendu un peu avant de prendre la parole car j’avais besoin de temps pour moi, avec mes proches. Comme vous pouvez l'i…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PhilTGooner I really hope absolutely everyone involved in this world cup loses all their money.
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo VOLEIBOL BANGTAN WORLD CUP
+🔐 ARMY TEAM COLOMBIA
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @thatpaulbloomer: When I first heard about migrant workers being killed building stadia for the World Cup in Qatar, I thought it’d be do…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FabrizioRomano: It’s true that Manchester United are prepared to instruct Cristiano Ronaldo not to return to Carrington after World Cup…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @telefoot_TF1 Bellingham et messe meilleur joueur
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @goal: Just two days until the World Cup begins ⏳ https://t.co/Jhr9DEif3L
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Greta0086: 周五啦，今天想休息一下！ 抽奖发完打游戏去喽！
+@_p12_  和 @0xNawarat 的WEB3 世界杯联合活动。活动开始了我有个展位，你们可以在元宇宙里面跑过去看看我哈哈。正考虑要不要放点什么类型的照片啥的。
+
+🎁奖品：5个Magic Box…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Mr Oborne has been on quite the journey, hasn’t he? https://t.co/L1bo3iIIoW
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @433: 19-year old left-back Alejandro Balde has been called up to the World Cup 🇪🇸⭐️ https://t.co/pTG6XFr0wB
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BarcaUniversal: Survey: Which team are the favorites to win the 2022 World Cup in Qatar? https://t.co/vMyeCpbTEu
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @_BeFootball: Lionel Messi pose avec les crampons qu'il portera lors de la Coupe du Monde 2022. 😍🇦🇷
+
+Vous validez la paire ? https://t.c…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FOS: NEWS: Qatari officials have abruptly reversed course, banning alcohol sales in and around all 8 World Cup stadiums.
+
+FIFA has a $7…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @qatarairways: Passengers can continue celebrating until their flights depart 🏆🥳
+
+The #Qatar2022 World Cup vibes continue beyond the sta…
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BetVictor #Crackthecode
+2022-11-18 16:03:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text MY SPANISH TEACHER IS PLAYING SPEEDS WORLD CUP SONG IN CLASS LMFAO
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @_JRHEALY Thanks for the ❤️  ! We’ll tweet you when the USA is Playing the FIFA World Cup #FIFAWorldCuponFOX
+Reply #unsubscribe to opt-out.
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @now_arsenaI: A photo of Granit Xhaka on a building in Qatar ahead of the World Cup!🇨🇭 https://t.co/QHO3HpFB60
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @AfricellGM Draw
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Promote it on @nftmarkettplace https://t.co/oJtzQ40KPI
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @reigns_era: Sami Zayn vs Santos for the Smackdown World Cup is all I need #SmackDown
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AlbicelesteTalk: Only two players completed more than 100 dribbles at the World Cup since 1966:
+
+🥇 Lionel Messi — 110
+🥈 Diego Maradona…
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo Fútbol
+
+BANGTAN WORLD CUP
+ARMY TEAM COLOMBIA
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Families of migrant workers who died in Qatar are waiting for answers
+
+Via Washington Post : Fri, 18 Nov 2022, 09:58:18 GMT
+
+https://t.co/O8ukmf1plA
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Wow fatty knows his stuff https://t.co/0ah2gRw5Qi
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo BANGTAN WORLD CUP https://t.co/sZyeBDmgF5
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ESPNFC: Messi appears to be rooming alone at a World Cup for the first time 💔
+
+(via @RoyNemer) https://t.co/ZMJYGXnu8p
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SeerFoundation @RickOGX Why is nobody talking about this? Uniswap is being exploited by this dude. More than $200k so far https://t.co/xdIuesPvtx leaked in alpha group
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @NYDailyNews: Qatar bans sale of beer at eight World Cup stadiums in and around Doha
+
+The move comes just two days before the first game…
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Ghanasoccernet: World Cup 2022: Anderlecht star Majeed Ashimeru backs Black Stars to qualify from group https://t.co/NYMFSsDMt4 https:/…
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @YamatoMebdi On va suivre ces eum comme ci c’était la coupe du monde
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text This is not weird at all…‼️🤣🔍🔍🔍💥🤦🏻‍♀️ #Bots 🤖
+#CoordinatedCampaign https://t.co/HVzbm7nSoG https://t.co/EWZFYqLU9c
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @LDolengowski Online bullying: sometimes good?
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PopCrave: Alcohol sales to be banned at World Cup stadiums in Qatar, FIFA announces. https://t.co/a2IOlkfZLZ
+2022-11-18 16:03:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Pxdressi @ESPNFC lol theyre not, you melt
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @bet365_aus Nic Berry
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @eddieque07 @Football__Tweet @sporx Not even the world cup was enough for people to want to go to qatar
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tariqpanja: If you're Brazilian you may be left scratching your head about all of this. You may recall that FIFA forced Brazil to chang…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @XMaximist: World Cup in Days and $XDB with the football narrative coupled by a very low market cap will do well IMO.
+
+David Beckham is…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @DavidWPoole73 @tariqpanja The fan parks were great for the world club championship a few years back. Plenty of beer. And it poured with rain!
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @CNN Most Muslims are terrorists and pork tastes really good 👍🏻
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PolandChartmys ARMY TEAM POLAND
+BANGTAN WORLD CUP
+Startujemy 😁 https://t.co/vir9jOqSyP
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BFordLancer48 Netherlands 🇳🇱
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text No beer at the World Cup? Crusade. Immediate crusade.
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @lasource75006: Il sera possible de voir des matchs de la coupe du monde au parc des princes ! Le PSG lance pour la première fois son ma…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CFCMod_: Still feel extremely embarrassed that my country didn’t make the World Cup, especially cause we lost to our neighbours, those…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Kebanyakan baba.. https://t.co/aKKj0k43yO
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text hoping that 🇦🇷 bring it home
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook_SNS: Maru Korean BBQ Restaurant in Qatar posted about Jungkook's visit last night being an honor.
+
+"BTS Jungkook, we are great…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Messi's new signature World Cup boots 🤩 https://t.co/F7hgVlTJxG
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Qatar Bans Alcohal Sales at World Cup Stadiums - Shut Board https://t.co/RmGBgeo0k5 #QatarWorldCup2022 #Qatar #Qatar2022 #FIFA #FIFAWorldCup #qatarbanalcohal #qatarbanbeersales #FIFAMobile #Qataris
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text alright I'm tired of waiting I'll break twitter myself when does the world cup start
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ShowMeta_io: #ShowMeta Weekly Report (14th-18th, Nov)
+
+🧩 Highlights:
+🔸 ShowMeta #Testnet Mining Launch 🚀
+🔸 Distribution of mystery box…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoadQatar_WC: ☁️WELCOME TO THE ROADQATAR - AIRDROP CAMPAIGN☁️
+
+⚽️Let's accompany ROADQATAR in the real “Road to Qatar" of WORLD CUP 202…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WayneRooney: Argentina look dangerous. That's why they are my favourites to win the World Cup. Read my tournament preview for @TimesSpo…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @BTSFondosARMYCo baloncesto
+BANGTAN WORLD CUP
+ARMY TEAM COLOMBIA
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BTSArmyZA: 🌐BANGTAN WORLD CUP🌐
+
+ROUND 3 OFFICIALLY BEGINS!
+
+Poland🇵🇱 vs South Africa🇿🇦
+
+Spotify playlist:
+🇿🇦:https://t.co/K3VPaEWn3u
+(W…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @disclosetv Is Coca-Cola still one of FIFAs biggest sponsors? Just asking for a friend…
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Chiliz Continues To Trend Higher Amidst World Cup Fever; Is $0.4 Possible? https://t.co/yhKxtZlYMP
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ARMY TEAM SOUTH AFRICA BANGTAN WORLD CUP https://t.co/i7mEOyKxtR
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @adityagursahani We have recently launched a new discussion platform:
+
+https://t.co/SZ3J4CAZlI
+
+Please visit the site and check if anything interests you. Feel free to post your opinion on any topics you like to write on.
+
+Please RT #atmanirbhar app
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SoucreMalumaFr: Vient de publier une photo à World Cup Qatar 2022 -كأس العالم قطر https://t.co/R6sfTR9PwS
+2022-11-18 16:03:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GollumsGems: $2000 GG SOLDIER NFT GIVEAWAY
+
+To celebrate their upcoming marketing push and release of the fan token, Shiba World Cup ar…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Amine_000 Prompt rétablissement petit frère
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KookCharts: We still didn’t realized how big is Jeon Jungkook being the MAIN PERFORMER at FIFA World Cup. A Korean man from Busan at 25…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @talkSPORT Couldn’t agree more. It’s been slated beyond belief but will probably turn out to be the best run World Cup yet
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text World Cup 2022: Alcohol sales banned at World Cup stadiums in Qatar https://t.co/ycPBoCzPy8
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook_SNS: Maru Korean BBQ Restaurant in Qatar posted about Jungkook's visit last night being an honor.
+
+"BTS Jungkook, we are great…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tariqpanja: So a few months ago @rorysmith had this theory that because of the commercial pull of European football, players elsewhere…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Jungkook_SNS: Maru Korean BBQ Restaurant in Qatar posted about Jungkook's visit last night being an honor.
+
+"BTS Jungkook, we are great…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text alcohol nasty but seriously sepp blatter has jus guaranteed the worst WC of all time https://t.co/9Gw2b1vI8I
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text It’s time let’s gaurrr🔥🔥🔥
+
+BANGTAN WORLD CUP 
+ARMY TEAM SOUTH AFRICA 🇿🇦🇿🇦
+
+#BANGTANWORLDCUP
+#ARMYTEAMSOUTHAFRICA https://t.co/UD80jzNJsK
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KMedrek: 🇲🇦Happy Independence Day🇲🇦
+On November 18th, #Morocco celebrates, with great pride, the 67th anniversary of its #independence…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JJKNewChapter: JUNGKOOK will be honoured by his biggest Chinese Fans club @Jungkook__China w/ Live Broadcasting TV Ad Support in SBS 🇰🇷…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BBCSport: Maurico Pochettino 🤝 @BBCSport 
+
+The former Argentina international joins an all-star cast of pundits on the @BBC for the Wor…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Damian_Barr: Already sick of hearing the World Cup in Qatar being described as ‘controversial’. 
+
+Flogging, jailing & threatening to ki…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @airdropblgspot: 💥#CoinSwap World Cup NFT
+
+💰Rewards
+- World Cup Cards"- Collect all 32 NFTs get 15K USDT
+- Top 4 Cards"- Collect the NFT…
+2022-11-18 16:03:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BTSFondosARMYCo: 🌐⚔️⚽ COMENZAMOS
+
+#ARMYColombia 🇨🇴
+Oficialmente damos inicio al partido que llevará a Colombia a la final del torneo de…
