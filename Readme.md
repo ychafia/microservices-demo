@@ -3,6 +3,11 @@ Please find here some commands to start microservices :
 ## start docker compose :
 - cd docker-compose br
 - docker-compose -f common.yml -f kafka_cluster.yml up
+    #### update :
+    After transformate twitter-to-kafka-service to a dokcer image, you simplu user dokcer-compose to start all service inside docker containers
+    - docker-compose -f common.yml -f kafka_cluster.yml -f services.yml up
+    - OR
+    - docker-compose up
 
 ## list docker containers :
 - docker ps

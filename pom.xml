@@ -9,6 +9,7 @@
 		<module>kafka/kafka-model</module>
 		<module>kafka/kafka-admin</module>
 		<module>kafka/kafka-producer</module>
+		<module>kafka/kafka-consumer</module>
 		<module>common-config</module>
 	</modules>
 	<parent>
