@@ -1,0 +1,2222 @@
+2022-12-09 14:32:58 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 14:32:59 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 14:32:59 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 14:32:59 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 14:33:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 14:33:00 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 14:33:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 14:33:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 14:33:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670592780528
+2022-12-09 14:33:02 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:33:04 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:33:05 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:33:05 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 14:33:07 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:33:08 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:33:08 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 13.585 seconds (JVM running for 14.976)
+2022-12-09 14:36:00 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 14:36:01 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 14:36:01 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 14:36:01 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 14:36:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 14:36:01 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 14:36:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 14:36:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 14:36:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670592961880
+2022-12-09 14:36:03 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:36:05 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:36:06 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:36:07 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 14:36:08 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:36:10 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:36:10 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 13.192 seconds (JVM running for 14.469)
+2022-12-09 14:48:15 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 14:48:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 14:48:16 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 14:48:16 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 14:48:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 14:48:16 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 14:48:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 14:48:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 14:48:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670593696846
+2022-12-09 14:48:18 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:48:20 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:48:21 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:48:22 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 14:48:23 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:48:25 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 14:48:25 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 13.054 seconds (JVM running for 14.237)
+2022-12-09 15:18:11 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:18:11 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:18:11 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:18:11 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:18:12 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:18:12 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:18:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:18:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:18:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670595492596
+2022-12-09 15:18:14 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:18:16 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:18:17 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:18:18 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:18:19 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:18:20 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:18:20 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 13.243 seconds (JVM running for 14.626)
+2022-12-09 15:31:15 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:31:15 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:31:15 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:31:15 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:31:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:31:16 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:31:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:31:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:31:16 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670596276555
+2022-12-09 15:31:18 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:31:20 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:31:21 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:31:21 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:31:23 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:31:24 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:31:24 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 13.167 seconds (JVM running for 14.314)
+2022-12-09 15:35:27 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:35:29 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:35:29 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:35:29 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:35:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:35:30 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:35:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:35:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:35:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670596530622
+2022-12-09 15:35:32 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:35:34 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:35:35 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:35:35 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:35:37 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:35:38 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:35:38 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.443 seconds (JVM running for 15.798)
+2022-12-09 15:36:43 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:36:45 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:36:45 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:36:45 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:36:45 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:36:46 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:36:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:36:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:36:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670596606214
+2022-12-09 15:36:48 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:36:49 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:36:51 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:36:51 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:36:53 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:36:54 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:36:54 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.642 seconds (JVM running for 15.871)
+2022-12-09 15:41:07 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:41:09 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:41:09 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:41:09 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:41:09 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:41:10 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:41:10 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:41:10 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:41:10 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670596870103
+2022-12-09 15:41:12 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:41:13 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:41:14 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:41:15 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:41:16 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:41:18 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:41:18 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.433 seconds (JVM running for 15.604)
+2022-12-09 15:45:05 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:45:06 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:45:06 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:45:07 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:45:07 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:45:07 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:45:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:45:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:45:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670597107733
+2022-12-09 15:45:09 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:45:11 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:45:12 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:45:13 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:45:14 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:45:15 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:45:15 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.309 seconds (JVM running for 15.482)
+2022-12-09 15:51:28 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 15:51:29 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 15:51:29 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 15:51:29 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 15:51:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 15:51:30 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 15:51:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 15:51:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 15:51:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670597490717
+2022-12-09 15:51:32 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:51:34 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:51:35 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:51:36 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 15:51:37 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:51:38 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 15:51:38 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.761 seconds (JVM running for 16.757)
+2022-12-09 16:00:06 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 16:00:08 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=c69a9ea54c8dde336f72f06da72ed04c9bd7afa0, state=null
+2022-12-09 16:00:08 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 16:00:08 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 16:00:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 16:00:08 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 16:00:09 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:00:09 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:00:09 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598009035
+2022-12-09 16:00:11 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:00:12 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:00:13 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:00:14 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 16:00:15 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:00:17 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:00:17 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.345 seconds (JVM running for 15.543)
+2022-12-09 16:00:17 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-12-09 16:00:17 [main] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic is ready for operations!
+2022-12-09 16:00:17 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:00:17 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598017322
+2022-12-09 16:00:17 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:00:17 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:00:17 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:00:17 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598017336
+2022-12-09 16:00:17 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:00:17 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:00:17 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:00:17 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:00:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598017345
+2022-12-09 16:00:17 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:00:17 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:00:17 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:00:17 [twitterTopicListener-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:00:17 [twitterTopicListener-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:00:19 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:00:19 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:00:19 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:00:19 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:00:19 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:00:19 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Finished assignment for group at generation 1: {consumer-twitterTopicListener-1-b9eb68bf-15ce-4e6d-b35e-8d4f5c9c6af6=Assignment(partitions=[twitter-topic-0]), consumer-twitterTopicListener-2-9c9cf19f-9d53-4d52-88f5-41f5ada7d1fa=Assignment(partitions=[twitter-topic-1]), consumer-twitterTopicListener-3-b03346fb-7f6e-4fef-9c1e-b4cc1d2b016d=Assignment(partitions=[twitter-topic-2])}
+2022-12-09 16:00:25 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-12-09 16:00:25 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Successfully joined group with generation 1
+2022-12-09 16:00:25 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-2
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-0
+2022-12-09 16:00:25 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-1
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-0
+2022-12-09 16:00:25 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-1
+2022-12-09 16:00:25 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Found no committed offset for partition twitter-topic-2
+2022-12-09 16:00:25 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-2 to offset 0.
+2022-12-09 16:00:25 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-1 to offset 0.
+2022-12-09 16:00:25 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-2]
+2022-12-09 16:00:25 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-1]
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Resetting offset for partition twitter-topic-0 to offset 0.
+2022-12-09 16:00:25 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-0]
+2022-12-09 16:00:26 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 198 number of message received with keys [2639843997, 1503307459733114887, 1600884398332821505, 260978209, 1546186887613878274, 1113914824726077441, 1523423673012690944, 981572031568326656, 83730682, 1886378785, 1561640782435475456, 1058440561642889218, 1073279943222706178, 882745753097129984, 2448414226, 2202392092, 62557050, 825397805212692482, 3246371395, 884894940815384577, 1584405459238531073, 2307515265, 811935360339087360, 3390367679, 260139790, 1600551699550068736, 2765075909, 4034704943, 962660166, 1572295666457509893, 1516328286242189313, 1599401177870999561, 1498699280697020418, 1239217466259247105, 1592563135919099909, 1424408101315297284, 2346360254, 1447561384280080386, 1396185541, 873452905214431232, 1251968303079329793, 24587530, 2807650224, 109062326, 859251535791837184, 35389209, 1333148726785929216, 32339605, 1568192668588556289, 834385735415246849, 1595661111252381699, 3178242122, 2802979055, 899526438533156866, 766687116, 786025920998019073, 32339605, 1576319118776696832, 17980258, 859251535791837184, 712846293236748292, 789255926, 713839158909804544, 1285821748550787078, 1600551699550068736, 1594624285724786690, 1077571249600151553, 68363621, 1167720085278089216, 32339605, 1081534099343343616, 58833791, 789255926, 2623031806, 3067451746, 890754402, 4593083080, 1273642868859699208, 719919780271144960, 1101453391086211072, 983274782, 1232330430663315456, 1432071017451642883, 1576319118776696832, 1135680379069829120, 1567173897367474177, 1561640782435475456, 1477444475056238592, 2758584779, 1572613764490399745, 1202272946, 1477704877694406667, 1102101454431682562, 713839158909804544, 1598828257729806339, 1506231723742437376, 32339605, 1425791062463877120, 1438477875481436166, 342985659, 1431473325142851587, 495268802, 1449958075931054083, 1316777131511296000, 2202392092, 1597484827938275328, 2313413854, 1591163682075148291, 602284802, 1297207077362958336, 352325221, 953779015143362560, 1330435267916947456, 1457399108013068293, 1487336559573716994, 1652276154, 64170080, 1594624285724786690, 1367007747917684738, 1441397792031666185, 1454708951992442883, 1095475486636077057, 986272209822924800, 1111958182132359168, 1595840930250113026, 3787370177, 4370541735, 161431279, 789255926, 2978098233, 618666097, 2480484407, 2594661667, 1591186267575918600, 1260174968484016128, 1463561124171988996, 929520213263093760, 2384975443, 2546189339, 1179387214561775616, 535875995, 2542687872, 1283523106615721984, 470452919, 2330578745, 1004753636071755776, 1592674693450022912, 1447250016947552263, 1393739293131169797, 1023080015662133250, 1207960833080381442, 1487336559573716994, 370576968, 110236816, 1408941014442778627, 3242099530, 2479476571, 1594129485405855749, 1580911343389089792, 1564279508546502656, 925779610859601927, 73800371, 1197158624180592640, 1268282990532202498, 278674510, 1243831141741875201, 612877685, 784530357387423749, 3008147331, 1230618882517471232, 1247423129573396487, 1502941559188250624, 2517365196, 1521149110623080448, 1096917727178981377, 1591089438179749888, 1867980462, 2246433373, 422739513, 1358433657850109958, 1195046425651892224, 1343218725974142977, 1382896583574949888, 1213818251995566081, 439719623, 3342026113, 1869551305, 342985659, 119376483, 1244355627981340674, 24899245, 2579500110, 3516482479, 1441210620964003844, 3130772325, 1178271365822058497, 1345400667804995586, 1446919838291664903], partitions [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197], sending it to elastic: Thread id 57
+2022-12-09 16:00:26 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 166 number of message received with keys [1588193075335409665, 514717534, 847502712258256896, 1157180452173766657, 1518260443571273731, 1048627038221950976, 499206836, 1135391637230817281, 24235729, 1593888254536712192, 138958308, 1567946301035143169, 1160624538, 1508079087796953088, 1541314434056204288, 1590614113113509888, 1298051823979253760, 1062767221481631744, 1486934934, 2883811457, 24235729, 1471928995390398468, 1331936154992713731, 979402413764300800, 391033363, 1566065578330423297, 1957761061, 2242779470, 487548590, 1404410894939983875, 925356866586234880, 1330510451860451329, 1598137890759856128, 2717975664, 1260902490339307520, 248192122, 1212088287201902592, 839440277152612352, 1491795016884244497, 1441070011662041101, 428438044, 24235729, 487548590, 1218597667267338240, 1468279796, 874714543, 3190563796, 1567265814675333121, 1071077257173786624, 917072943137648641, 1593888254536712192, 1600846963150184449, 1595777641197338625, 1094340290524139520, 1172800957932961792, 1475725462458417153, 1495142011615199238, 216550628, 1552530540636606465, 1223884076517597184, 208903029, 1588193075335409665, 1657471614, 1466320379538984965, 16312717, 1529859717786488832, 2837672145, 753206318224203778, 1585271502684971009, 1117776886686470145, 2471097036, 1695932964, 95184313, 893092933582200835, 926167172241678338, 2893974995, 1117776886686470145, 1260234765841514496, 282346220, 1114143104465080320, 1015238829538709505, 1012227757, 1212505350022164480, 1330510451860451329, 1915112100, 966149877364350977, 116343869, 257578382, 219850324, 995595848615677957, 2599641152, 2413489257, 1396469570026696706, 1166675324454756352, 145622731, 1353035208577200128, 1330510451860451329, 1590614113113509888, 883325323491901441, 592426269, 954973265922990080, 41969152, 1509594697576157196, 2358551683, 1508079087796953088, 487548590, 1591191262497054736, 4884102375, 1595713349760655361, 1530581178436173828, 2413489257, 1574371411262586887, 773760941536210944, 989088514607407104, 831023112, 52104831, 3046789186, 545323885, 19503627, 882344881, 1405051446534369288, 588796032, 894426688687411201, 1093236065173889024, 1538864221349416966, 1359154988350595072, 2456657931, 2183936788, 1468279796, 1600816103080357889, 89673446, 794838711557062656, 748960522356137984, 1330510451860451329, 1591452527643529218, 1598028529605742593, 1147806649618489346, 1081850992956764160, 1491685896965562372, 1508079087796953088, 1374239674923847682, 1562582667366805505, 2165697044, 384461182, 1270029963849281537, 46285496, 776331966031491072, 1335531923863695360, 1394842497843617792, 829778582, 95222427, 1588193075335409665, 1221916172075094016, 2479897040, 1232125791233826816, 26621229, 1509594692761100307, 1547884990012067847, 963588280552914949, 3104294678, 1330510451860451329, 1121398212529618944, 993676236445515776, 2964656261, 74742835, 586264487], partitions [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165], sending it to elastic: Thread id 59
+2022-12-09 16:00:26 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 169 number of message received with keys [1401265089374785547, 2715126554, 1153336489503145984, 976069223490490374, 1533840119358423041, 1426178357486505984, 259204360, 1580186403366875136, 1069224548560773120, 720368594090008576, 2567163194, 17516015, 4068012749, 81289516, 1164808675, 1561007845021290502, 1211828649722122240, 1481403923646844929, 1038196534221910017, 726528317038419969, 394987152, 1493199479977218060, 1253093210651533318, 1687584978, 1577541642420035584, 857218339650908160, 1303946424, 1578024456551010305, 1430283198160834563, 1316443255257600001, 283964380, 1238766918841954304, 1487369829774471169, 1064536602934951936, 1566140115390529537, 157350578, 1425279595062902785, 1496482811813015562, 1592595991236075520, 1174282953184206848, 994890049, 323596608, 1549394217612500996, 1526662703183536130, 1112654598, 517804822, 2905255001, 1259846739282059265, 904652467, 1332632510233145347, 1386475442052472833, 1259846739282059265, 1398388552468160513, 3066588138, 1043131630989271041, 443318003, 1558002600796049408, 1448184350437044225, 1475076831913160706, 1444976964486537218, 1577541642420035584, 361210629, 1190940984022126593, 1437357972334817280, 1597004263099666432, 222137852, 1521091178090926084, 1441178796242006021, 912324279504637955, 1119365810097672194, 1278001765074386944, 1155027555923054592, 1598637443867090946, 275344010, 1592890065906180096, 1444012540938244097, 42221305, 1349852755796647936, 1379409175479001091, 1193607305755013120, 987272637658337280, 3370603877, 2436138464, 1444012540938244097, 1046332264857178113, 749261298, 1097808220062650368, 981380256, 1441178796242006021, 1501571039075397635, 1630656806, 1339642225240788997, 1447569275204550664, 3389475604, 1489089839697842178, 1558002600796049408, 97195591, 1306290357378756608, 253139866, 1523248184759394304, 548626799, 1563194780032454657, 97195591, 541308798, 1113877817178120192, 1487925684391530505, 1581144446850113537, 1455459063681241088, 1600849153709510664, 1527370301696528384, 394721978, 1363551771755352066, 1259846739282059265, 97195591, 21336013, 4866582185, 1160212269990666240, 1359758919619407872, 452442761, 1272963217963220999, 62110241, 280577820, 322365001, 325554834, 1001908238043017216, 211273119, 2969828679, 1371114844733149185, 97195591, 1482293428209729542, 452777650, 988542633743175681, 1553368978760040448, 1529047960566255617, 804791072, 1495847043407007752, 1449753240426500097, 1575167253401706499, 1535905815273545728, 253397105, 2714662767, 1521091178090926084, 74496730, 1009291818440249344, 4622928322, 34921903, 1160539651146440704, 1551306955075067905, 1021903975153627137, 1519086909850456065, 1509095405212033029, 1927039081, 300786594, 74496730, 1583522902779039747, 419631445, 1171388933084798977, 1551312661203525632, 2173508552, 981872095540994049, 74496730, 1544746125747429378, 1598322820295049217, 1328644995167956995, 1475223782721667072, 1319694866088153088, 962745132490641411, 1559893578717208576, 1510952136183623686], partitions [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168], sending it to elastic: Thread id 61
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-2
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-1
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-0
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-2]
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-1]
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-0]
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Member consumer-twitterTopicListener-1-b9eb68bf-15ce-4e6d-b35e-8d4f5c9c6af6 sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Member consumer-twitterTopicListener-3-b03346fb-7f6e-4fef-9c1e-b4cc1d2b016d sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Member consumer-twitterTopicListener-2-9c9cf19f-9d53-4d52-88f5-41f5ada7d1fa sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:04:37 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:04:37 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:04:37 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:04:56 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 16:04:58 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=0690ef300342bbe4f5395d2fc8c1f763b46f0ead, state=null
+2022-12-09 16:04:58 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 16:04:58 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 16:04:58 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 16:04:58 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 16:04:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:04:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:04:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598298865
+2022-12-09 16:05:00 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:05:02 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:05:03 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:05:03 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:05:03 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598303923
+2022-12-09 16:05:03 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:05:03 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:05:03 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:05:03 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598303938
+2022-12-09 16:05:03 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:05:03 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:05:03 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:05:03 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:05:03 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598303950
+2022-12-09 16:05:03 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:05:03 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:05:03 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:05:03 [twitterTopicListener-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:05:03 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:05:03 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:05:03 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:05:03 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:05:03 [twitterTopicListener-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:05:03 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:05:03 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:05:04 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 16:05:05 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:05:06 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Finished assignment for group at generation 3: {consumer-twitterTopicListener-1-486c6297-715e-40fc-874a-a8539af9e263=Assignment(partitions=[twitter-topic-0]), consumer-twitterTopicListener-3-43468a22-fa69-4572-86b9-fa6d3e36629e=Assignment(partitions=[twitter-topic-2]), consumer-twitterTopicListener-2-ea1555b6-4759-40ad-9946-56dd13ee07ba=Assignment(partitions=[twitter-topic-1])}
+2022-12-09 16:05:07 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Successfully joined group with generation 3
+2022-12-09 16:05:07 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Successfully joined group with generation 3
+2022-12-09 16:05:07 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Successfully joined group with generation 3
+2022-12-09 16:05:07 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-1
+2022-12-09 16:05:07 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-0
+2022-12-09 16:05:07 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-2
+2022-12-09 16:05:07 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Setting offset for partition twitter-topic-1 to the committed offset FetchPosition{offset=166, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}}
+2022-12-09 16:05:07 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Setting offset for partition twitter-topic-2 to the committed offset FetchPosition{offset=169, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}}
+2022-12-09 16:05:07 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Setting offset for partition twitter-topic-0 to the committed offset FetchPosition{offset=198, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}}
+2022-12-09 16:05:07 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-2]
+2022-12-09 16:05:07 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-0]
+2022-12-09 16:05:07 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-1]
+2022-12-09 16:05:07 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:05:07 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 15.204 seconds (JVM running for 16.621)
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-1
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-0
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-2
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-1]
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-0]
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-2]
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Member consumer-twitterTopicListener-2-ea1555b6-4759-40ad-9946-56dd13ee07ba sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Member consumer-twitterTopicListener-1-486c6297-715e-40fc-874a-a8539af9e263 sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Member consumer-twitterTopicListener-3-43468a22-fa69-4572-86b9-fa6d3e36629e sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:05:31 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:05:31 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:05:31 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:06:49 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 16:06:51 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=0690ef300342bbe4f5395d2fc8c1f763b46f0ead, state=null
+2022-12-09 16:06:51 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 16:06:51 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 16:06:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 16:06:51 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 16:06:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:06:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:06:51 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598411799
+2022-12-09 16:06:53 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:06:55 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:06:56 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:06:56 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:06:56 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598416893
+2022-12-09 16:06:56 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:06:56 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:06:56 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:06:56 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598416911
+2022-12-09 16:06:56 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:06:56 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:06:56 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:06:56 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:06:56 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670598416923
+2022-12-09 16:06:56 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:06:56 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:06:56 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:06:56 [twitterTopicListener-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:06:56 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:06:56 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:06:56 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:06:56 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:06:56 [twitterTopicListener-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:06:56 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:06:56 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:06:57 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 16:06:58 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:06:59 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Finished assignment for group at generation 5: {consumer-twitterTopicListener-2-c7e93de3-40ac-4668-ab2c-83023426af9a=Assignment(partitions=[twitter-topic-1]), consumer-twitterTopicListener-1-87387430-2616-4992-bf5e-cb36cecac6da=Assignment(partitions=[twitter-topic-0]), consumer-twitterTopicListener-3-7bfe07b9-4414-4d70-874e-809a980fba1a=Assignment(partitions=[twitter-topic-2])}
+2022-12-09 16:06:59 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Successfully joined group with generation 5
+2022-12-09 16:06:59 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Successfully joined group with generation 5
+2022-12-09 16:06:59 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Successfully joined group with generation 5
+2022-12-09 16:06:59 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-0
+2022-12-09 16:06:59 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-2
+2022-12-09 16:06:59 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-1
+2022-12-09 16:06:59 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Setting offset for partition twitter-topic-2 to the committed offset FetchPosition{offset=169, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}}
+2022-12-09 16:06:59 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Setting offset for partition twitter-topic-1 to the committed offset FetchPosition{offset=166, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}}
+2022-12-09 16:06:59 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Setting offset for partition twitter-topic-0 to the committed offset FetchPosition{offset=198, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}}
+2022-12-09 16:06:59 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-0]
+2022-12-09 16:06:59 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-2]
+2022-12-09 16:06:59 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-1]
+2022-12-09 16:07:00 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:07:00 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.45 seconds (JVM running for 15.843)
+2022-12-09 16:07:00 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 107 number of message received with keys [315120952, 1920778154, 2510564642, 30061010, 1585675318924230657, 1592857808847785984, 1599330745708953600, 1339930596168982529, 204481211, 1591329977542189056, 1593780950885928960, 1421520178530164740, 278677633, 1596062934161055744, 1579516062705426439, 1587168935501258753, 1489217154771820553, 1496986906965512193, 1590807246967111681, 1311630136870154242, 1143137596324962305, 1591329977542189056, 1584405459238531073, 782457946869555204, 1268504042583588864, 1414892563224571915, 1592857808847785984, 1269102479402287105, 112547006, 1597236796790050816, 1208865404971634689, 183908394, 554812599, 339303568, 1591329977542189056, 1070225124, 1492134549870026757, 1504255949997064198, 2292179574, 1540622565533954049, 1456543489873772550, 1597236796790050816, 1555858746462461954, 1600000220305448960, 1259553374, 2654726790, 1405779144944754689, 1592857808847785984, 1579516062705426439, 291732745, 1159276928496480256, 1359941401153306625, 1327715642372329472, 1591329977542189056, 1595429077791432708, 1599406348365664256, 1459911847772049408, 1504944627060600835, 1259553374, 1597236796790050816, 1487722740912365570, 1388420255790387200, 1531560514673078272, 1104648599323856896, 1599022484183187457, 776417649605476352, 315123309, 2243517801, 1531817964227465217, 1334765857, 2414088583, 1056472216458743808, 1591329977542189056, 345486986, 902198779780243457, 142274745, 1253996291241238528, 3247592555, 1592857808847785984, 1579516062705426439, 40096340, 1594042019827048449, 1514185669471772673, 493459575, 732038835153063936, 889923174489575425, 1598357184412151811, 1935177901, 2757696816, 939466902753107970, 1599022484183187457, 1537268627468357633, 1125236129354199040, 60622636, 212009897, 2573171372, 1207384381796605953, 1584405459238531073, 1478089949983522834, 1504944627060600835, 1592857808847785984, 1486796015424389124, 1555858746462461954, 1092812738886291456, 345879515, 382601541, 4077366057], partitions [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and offsets [198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304], sending it to elastic: Thread id 47
+2022-12-09 16:07:00 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 90 number of message received with keys [1487059026, 1278456570, 1577325884687585280, 210346471, 1372099760, 1531130448675590147, 892267119814909952, 1595836847242022912, 1492423243600306180, 234473414, 1599661603561287680, 1553975492948422656, 2713036797, 5723662, 1274807084983320576, 981858078336446464, 1274807084983320576, 1599661603561287680, 1533409169218363397, 1592979869587185670, 1584049286878461954, 1398844912330678273, 1553975492948422656, 1441378182, 854795695471169536, 1561479876884189185, 1150016290695917568, 1438584842875281413, 207437397, 745774264255545344, 1319687031375749123, 1599661603561287680, 1274807084983320576, 1584049286878461954, 1561479876884189185, 27346068, 274966974, 2256504919, 1553975492948422656, 1559582156694904833, 1565101132724174855, 1062200893, 1392981954723598339, 2335665432, 1584049286878461954, 1274807084983320576, 1451481397923831809, 1578100028756959232, 1514361406828728321, 1553975492948422656, 1561479876884189185, 1647598176, 1213106326240296963, 93731500, 1584049286878461954, 33459790, 1536626824331108352, 1371577167008661511, 1274807084983320576, 1561479876884189185, 67278158, 1583237666073870336, 1463532286570164225, 1584049286878461954, 70914067, 1553975492948422656, 1009040402815602690, 1167932205596909568, 1164144930, 1364081408, 59556774, 358693285, 1489144600476278790, 4698187278, 1404996180480696331, 1371577167008661511, 1531219977532870656, 1446032153205215233, 1295488748482785280, 1553975492948422656, 1441048455724503040, 4635832709, 400255829, 1428802031288999938, 4883162393, 1584049286878461954, 1519739521205690370, 1518585917174427649, 1589591406816870400, 1561479876884189185], partitions [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] and offsets [166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255], sending it to elastic: Thread id 49
+2022-12-09 16:07:00 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 127 number of message received with keys [1517427426070261760, 1594715267040686085, 1572970270352351235, 1591009518749556736, 495172857, 74496730, 1232227459829051392, 1296862926075305986, 1363467240834801665, 1107785122693017600, 1423087510184411137, 1220698983930068992, 1508392370336718848, 1465733337843122184, 1181066736, 902315095, 1477314026736603139, 1596383780, 1591009518749556736, 1320950430, 1277233670177329154, 1594715267040686085, 1594715267040686085, 1432442381157163010, 74496730, 974351400, 1517427426070261760, 1572970270352351235, 586714578, 1591009518749556736, 1296254178386419712, 830623872844181504, 1597284257646493701, 1531546503504068609, 951048036926582785, 1594715267040686085, 375642467, 1591009518749556736, 1334832833852915714, 1517427426070261760, 1423216552053145603, 1572970270352351235, 1546761751814979586, 1401470755, 2165287622, 1572970270352351235, 929313512471564288, 336196788, 1591009518749556736, 1512185372523982849, 1594715267040686085, 1505115394780332032, 1412077216624750604, 1484105122850680835, 1386017672576524292, 1252415696023072769, 1421785618992881666, 1541046432, 1591009518749556736, 1596203522302873602, 1569929769914929153, 1572970270352351235, 1517427426070261760, 1583456291367829505, 1392578499320426498, 1432201389002801160, 337095550, 1152911055582060544, 1580890837420240896, 2886806508, 1594715267040686085, 259951742, 1572970270352351235, 1591009518749556736, 1505115394780332032, 1591009518749556736, 1318025126244474882, 262667431, 1596203522302873602, 1244491135, 1166116624639782912, 1594715267040686085, 1591009518749556736, 1517427426070261760, 1572970270352351235, 1554729613594890240, 1432442381157163010, 1412154392166420488, 259785059, 1595835867339575298, 770006354752835586, 1330277729204391942, 1439643373619453955, 1510876439360737287, 1703066269, 1594715267040686085, 213413644, 1572970270352351235, 1591009518749556736, 1505486740018143234, 1517427426070261760, 1476325927818870785, 1170320539203842048, 2150120749, 1529773149000187905, 1552633056397512704, 459573131, 1594715267040686085, 1290303162369347584, 1572970270352351235, 1554729613594890240, 1591009518749556736, 1593664102961815552, 1517427426070261760, 17661303, 4454649022, 1547101369835917314, 1121513793908039680, 1431990316496732165, 717415507721338880, 52373889, 3327888489, 164900310, 964411721308753921, 1570735819874508802, 1505689653843664898, 1591009518749556736], partitions [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] and offsets [169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295], sending it to elastic: Thread id 51
+2022-12-09 16:07:00 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1031226056, 3100198457, 84263578], partitions [0, 0, 0] and offsets [305, 306, 307], sending it to elastic: Thread id 47
+2022-12-09 16:07:00 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 6 number of message received with keys [1492192490300100609, 1046088975851503616, 1553975492948422656, 1379138206550097927, 143478574, 817363100655501312], partitions [1, 1, 1, 1, 1, 1] and offsets [256, 257, 258, 259, 260, 261], sending it to elastic: Thread id 49
+2022-12-09 16:07:00 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1594715267040686085, 1505351324816355335, 1459440891173691392, 777644939165306880, 1505115394780332032], partitions [2, 2, 2, 2, 2] and offsets [296, 297, 298, 299, 300], sending it to elastic: Thread id 51
+2022-12-09 16:07:02 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [1600000220305448960, 990559410, 1599022484183187457, 48668822], partitions [0, 0, 0, 0] and offsets [308, 309, 310, 311], sending it to elastic: Thread id 47
+2022-12-09 16:07:02 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1323169741406699520, 1591009518749556736, 530796764, 312213277, 1419987908061171712], partitions [2, 2, 2, 2, 2] and offsets [301, 302, 303, 304, 305], sending it to elastic: Thread id 51
+2022-12-09 16:07:02 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [1125172774857838592, 2152755456, 873698703781048320, 1395055209248821249], partitions [1, 1, 1, 1] and offsets [262, 263, 264, 265], sending it to elastic: Thread id 49
+2022-12-09 16:07:02 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [2382188840, 3290998525, 1594715267040686085, 20406514, 1517427426070261760], partitions [2, 2, 2, 2, 2] and offsets [306, 307, 308, 309, 310], sending it to elastic: Thread id 51
+2022-12-09 16:07:02 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1495212008396193792, 85343948, 728486041292771328, 1001840771295842304, 1501225585393156100], partitions [1, 1, 1, 1, 1] and offsets [266, 267, 268, 269, 270], sending it to elastic: Thread id 49
+2022-12-09 16:07:02 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1187866852803768321, 214236275], partitions [0, 0] and offsets [312, 313], sending it to elastic: Thread id 47
+2022-12-09 16:07:02 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1258727454543360000], partitions [1] and offsets [271], sending it to elastic: Thread id 49
+2022-12-09 16:07:03 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [1589591406816870400, 236063651, 1496552375200497672, 1553975492948422656], partitions [1, 1, 1, 1] and offsets [272, 273, 274, 275], sending it to elastic: Thread id 49
+2022-12-09 16:07:03 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [581770045, 1554729613594890240, 1442916693270056962, 1448323280377503744, 1494961461835218946], partitions [2, 2, 2, 2, 2] and offsets [311, 312, 313, 314, 315], sending it to elastic: Thread id 51
+2022-12-09 16:07:03 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1349274832014364672, 1477111771865387009, 1579516062705426439, 1601229919844958208, 504471126], partitions [0, 0, 0, 0, 0] and offsets [314, 315, 316, 317, 318], sending it to elastic: Thread id 47
+2022-12-09 16:07:05 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1584049286878461954, 766483547305680896, 1561479876884189185, 1589591406816870400, 1267599780827586560], partitions [1, 1, 1, 1, 1] and offsets [276, 277, 278, 279, 280], sending it to elastic: Thread id 49
+2022-12-09 16:07:05 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1039515443214602240, 1563920402082308097, 1592857808847785984, 1294057745445007366, 182923317], partitions [0, 0, 0, 0, 0] and offsets [319, 320, 321, 322, 323], sending it to elastic: Thread id 47
+2022-12-09 16:07:05 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [923880342, 2338669824, 44083615, 1572970270352351235], partitions [2, 2, 2, 2] and offsets [316, 317, 318, 319], sending it to elastic: Thread id 51
+2022-12-09 16:07:06 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [2380603737, 1595743031092707328, 1249675519, 1245543737649811456], partitions [1, 1, 1, 1] and offsets [281, 282, 283, 284], sending it to elastic: Thread id 49
+2022-12-09 16:07:06 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1591021049902145544, 885261988749864960, 713653530599559168, 1276320350062678017, 2904482218], partitions [0, 0, 0, 0, 0] and offsets [324, 325, 326, 327, 328], sending it to elastic: Thread id 47
+2022-12-09 16:07:06 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 4 number of message received with keys [3362354571, 29926710, 1517427426070261760, 1594715267040686085], partitions [2, 2, 2, 2] and offsets [320, 321, 322, 323], sending it to elastic: Thread id 51
+2022-12-09 16:07:06 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1598357184412151811, 2386030129], partitions [0, 0] and offsets [329, 330], sending it to elastic: Thread id 47
+2022-12-09 16:07:06 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 6 number of message received with keys [1560404584304197634, 1108837649140322317, 1487946640757460993, 1559351855280422912, 857087579535048704, 1096801494903468034], partitions [2, 2, 2, 2, 2, 2] and offsets [324, 325, 326, 327, 328, 329], sending it to elastic: Thread id 51
+2022-12-09 16:07:06 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1524645203918872576, 1868834702], partitions [1, 1] and offsets [285, 286], sending it to elastic: Thread id 49
+2022-12-09 16:07:06 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 2 number of message received with keys [129753889, 1599022484183187457], partitions [0, 0] and offsets [331, 332], sending it to elastic: Thread id 47
+2022-12-09 16:07:07 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1385926328927588352, 1388899548416811009, 1554729613594890240, 88305935, 1591009518749556736], partitions [2, 2, 2, 2, 2] and offsets [330, 331, 332, 333, 334], sending it to elastic: Thread id 51
+2022-12-09 16:07:07 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 1 number of message received with keys [198445623], partitions [0] and offsets [333], sending it to elastic: Thread id 47
+2022-12-09 16:07:07 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 8 number of message received with keys [1584049286878461954, 1162455779405959170, 1597988564150657024, 23378798, 1589591406816870400, 1553975492948422656, 894522252, 349480374], partitions [1, 1, 1, 1, 1, 1, 1, 1] and offsets [287, 288, 289, 290, 291, 292, 293, 294], sending it to elastic: Thread id 49
+2022-12-09 16:07:08 [twitterTopicListener-1-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1531219977532870656, 1595743031092707328, 1337519477978787845, 1540746654600482816, 164433132], partitions [1, 1, 1, 1, 1] and offsets [295, 296, 297, 298, 299], sending it to elastic: Thread id 49
+2022-12-09 16:07:08 [twitterTopicListener-2-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 6 number of message received with keys [1552706967923314688, 1519412790246752256, 980782925128937474, 164900310, 940607815953006592, 21466241], partitions [2, 2, 2, 2, 2, 2] and offsets [335, 336, 337, 338, 339, 340], sending it to elastic: Thread id 51
+2022-12-09 16:07:08 [twitterTopicListener-0-C-1] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - 5 number of message received with keys [1087441594356297728, 1249585041899806721, 788824095974621184, 1599406348365664256, 2398571646], partitions [0, 0, 0, 0, 0] and offsets [334, 335, 336, 337, 338], sending it to elastic: Thread id 47
+2022-12-09 16:07:26 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-0
+2022-12-09 16:07:26 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-2
+2022-12-09 16:07:26 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Revoke previously assigned partitions twitter-topic-1
+2022-12-09 16:07:26 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-2]
+2022-12-09 16:07:26 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-1]
+2022-12-09 16:07:26 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions revoked: [twitter-topic-0]
+2022-12-09 16:07:26 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Member consumer-twitterTopicListener-1-87387430-2616-4992-bf5e-cb36cecac6da sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:07:26 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Member consumer-twitterTopicListener-2-c7e93de3-40ac-4668-ab2c-83023426af9a sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:07:26 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Member consumer-twitterTopicListener-3-7bfe07b9-4414-4d70-874e-809a980fba1a sending LeaveGroup request to coordinator localhost:29092 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2022-12-09 16:07:26 [twitterTopicListener-2-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:07:26 [twitterTopicListener-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:07:26 [twitterTopicListener-1-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Unsubscribed all topics or patterns and assigned partitions
+2022-12-09 16:07:26 [twitterTopicListener-2-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:07:26 [twitterTopicListener-1-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:07:26 [twitterTopicListener-0-C-1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2022-12-09 16:07:27 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:07:27 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:07:27 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - twitterTopicListener: Consumer stopped
+2022-12-09 16:32:47 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-09 16:32:49 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=kafka-to-elastic-service,config-client, profiles=[kafka_to_elastic], label=null, version=88f8a4da377ba7c987847386b128b22f2db3d166, state=null
+2022-12-09 16:32:49 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client-kafka_to_elastic.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/ychafia/config-server-repository.git/config-client.yml'}]
+2022-12-09 16:32:49 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - The following profiles are active: kafka_to_elastic
+2022-12-09 16:32:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0a35f918-4d01-36b3-8b39-4ff374aaf8ad
+2022-12-09 16:32:50 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-09 16:32:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:32:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:32:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670599970634
+2022-12-09 16:32:52 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:32:54 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:32:55 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:32:56 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8182
+2022-12-09 16:32:57 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:32:58 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-12-09 16:32:58 [main] INFO  c.m.d.k.t.e.s.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 14.486 seconds (JVM running for 15.642)
+2022-12-09 16:32:58 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-12-09 16:32:58 [main] INFO  c.m.d.k.t.e.s.c.i.TwitterKafkaConsumer - Topics with name twitter-topic is ready for operations!
+2022-12-09 16:32:58 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:32:58 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670599978952
+2022-12-09 16:32:58 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:32:58 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:32:58 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:32:58 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670599978968
+2022-12-09 16:32:58 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:32:58 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:32:58 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitterTopicListener
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-12-09 16:32:58 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	specific.avro.reader = true
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-09 16:32:58 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670599978979
+2022-12-09 16:32:58 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Subscribed to topic(s): twitter-topic
+2022-12-09 16:32:58 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+2022-12-09 16:32:58 [twitterTopicListener-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:32:58 [twitterTopicListener-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:32:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:32:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:32:58 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:32:58 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:32:58 [twitterTopicListener-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Cluster ID: S_dl8YelSmytpTW-PPzkSQ
+2022-12-09 16:32:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Discovered group coordinator localhost:29092 (id: 2147483645 rack: null)
+2022-12-09 16:32:58 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] (Re-)joining group
+2022-12-09 16:33:02 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Finished assignment for group at generation 7: {consumer-twitterTopicListener-1-34d56672-ce88-489e-8233-bb091be94288=Assignment(partitions=[twitter-topic-0]), consumer-twitterTopicListener-2-462bb55a-7a77-4110-a51e-7f4189148754=Assignment(partitions=[twitter-topic-1]), consumer-twitterTopicListener-3-c37de9dc-1a0b-465c-8171-1ebbd08fd100=Assignment(partitions=[twitter-topic-2])}
+2022-12-09 16:33:02 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Successfully joined group with generation 7
+2022-12-09 16:33:02 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Successfully joined group with generation 7
+2022-12-09 16:33:02 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Successfully joined group with generation 7
+2022-12-09 16:33:02 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-0
+2022-12-09 16:33:02 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-2
+2022-12-09 16:33:02 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Adding newly assigned partitions: twitter-topic-1
+2022-12-09 16:33:02 [twitterTopicListener-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-1, groupId=twitterTopicListener] Setting offset for partition twitter-topic-0 to the committed offset FetchPosition{offset=339, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=absent}}
+2022-12-09 16:33:02 [twitterTopicListener-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-2, groupId=twitterTopicListener] Setting offset for partition twitter-topic-1 to the committed offset FetchPosition{offset=300, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=absent}}
+2022-12-09 16:33:02 [twitterTopicListener-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitterTopicListener-3, groupId=twitterTopicListener] Setting offset for partition twitter-topic-2 to the committed offset FetchPosition{offset=341, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=absent}}
+2022-12-09 16:33:02 [twitterTopicListener-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-0]
+2022-12-09 16:33:02 [twitterTopicListener-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-1]
+2022-12-09 16:33:02 [twitterTopicListener-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitterTopicListener: partitions assigned: [twitter-topic-2]

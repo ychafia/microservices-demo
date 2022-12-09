@@ -1,0 +1,82 @@
+2022-12-09 13:04:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-09 13:04:28 [main] INFO  c.m.demo.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-12-09 13:04:32 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3ec92dc5-ec3a-3029-a967-d8e88d3f6c4f
+2022-12-09 13:04:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-12-09 13:04:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-12-09 13:04:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-09 13:04:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-09 13:04:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-09 13:04:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5453 ms
+2022-12-09 13:04:36 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-09 13:04:41 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-09 13:04:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-12-09 13:04:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-12-09 13:04:41 [main] INFO  c.m.demo.server.ConfigServer - Started ConfigServer in 24.126 seconds (JVM running for 29.546)
+2022-12-09 13:06:46 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-09 13:20:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-09 13:20:12 [main] INFO  c.m.demo.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-12-09 13:20:17 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3ec92dc5-ec3a-3029-a967-d8e88d3f6c4f
+2022-12-09 13:20:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-12-09 13:20:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-12-09 13:20:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-09 13:20:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-09 13:20:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-09 13:20:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6003 ms
+2022-12-09 13:20:20 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-09 13:20:25 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-09 13:20:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-12-09 13:20:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-12-09 13:20:25 [main] INFO  c.m.demo.server.ConfigServer - Started ConfigServer in 23.792 seconds (JVM running for 28.515)
+2022-12-09 13:23:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-09 13:23:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-09 13:23:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2022-12-09 13:23:15 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client-twitter_to_kafka.yml
+2022-12-09 13:23:15 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client.yml
+2022-12-09 13:32:59 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client-kafka_to_elastic.yml
+2022-12-09 13:32:59 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client.yml
+2022-12-09 13:35:21 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client-twitter_to_kafka.yml
+2022-12-09 13:35:21 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client.yml
+2022-12-09 13:36:01 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client-kafka_to_elastic.yml
+2022-12-09 13:36:01 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client.yml
+2022-12-09 13:48:16 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client-kafka_to_elastic.yml
+2022-12-09 13:48:16 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-6919187079155120523/config-client.yml
+2022-12-09 13:50:29 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-09 14:05:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-09 14:05:41 [main] INFO  c.m.demo.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-12-09 14:05:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3ec92dc5-ec3a-3029-a967-d8e88d3f6c4f
+2022-12-09 14:05:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-12-09 14:05:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-12-09 14:05:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-09 14:05:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-09 14:05:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-09 14:05:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9123 ms
+2022-12-09 14:05:52 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-09 14:05:57 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-09 14:05:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-12-09 14:05:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-12-09 14:05:58 [main] INFO  c.m.demo.server.ConfigServer - Started ConfigServer in 28.671 seconds (JVM running for 32.856)
+2022-12-09 14:08:27 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-09 14:13:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-09 14:13:45 [main] INFO  c.m.demo.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-12-09 14:13:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3ec92dc5-ec3a-3029-a967-d8e88d3f6c4f
+2022-12-09 14:13:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-12-09 14:13:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-12-09 14:13:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-09 14:13:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-09 14:13:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-09 14:13:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7872 ms
+2022-12-09 14:13:55 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-09 14:14:01 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-09 14:14:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-12-09 14:14:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-12-09 14:14:02 [main] INFO  c.m.demo.server.ConfigServer - Started ConfigServer in 26.514 seconds (JVM running for 30.435)
+2022-12-09 14:17:27 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-09 14:17:27 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-09 14:17:27 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2022-12-09 14:17:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client-twitter_to_kafka.yml
+2022-12-09 14:17:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client.yml
+2022-12-09 14:18:11 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client-kafka_to_elastic.yml
+2022-12-09 14:18:11 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client.yml
+2022-12-09 14:31:15 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client-kafka_to_elastic.yml
+2022-12-09 14:31:15 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-734931672819343490/config-client.yml
+2022-12-09 14:32:14 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

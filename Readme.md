@@ -14,6 +14,8 @@ Please find here some commands to start microservices :
 
 ## Use kafkacat tool from docker container :
 - docker run -it --network=host confluentinc/cp-kafkacat kafkacat -L -b localhost:**`29092`**
+## List messages (events) inside _twitter-topic_ :
+- docker run -it --network=host confluentinc/cp-kafkacat kafkacat -b localhost:19092 -t twitter-topic
 
 ## connect to docker container terminal :
 - docker exec -it **`298fd418f85f`**  bash 

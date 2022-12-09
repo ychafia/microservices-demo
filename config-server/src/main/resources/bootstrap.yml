@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ychafia/config-server-repository.git
+          skip-ssl-validation: true
+    fail-fast: true

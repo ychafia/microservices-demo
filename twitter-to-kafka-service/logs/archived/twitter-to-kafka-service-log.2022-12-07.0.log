@@ -1,0 +1,1162 @@
+2022-12-07 16:40:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication on LAPTOP-86U4U8ED with PID 20288 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-12-07 16:40:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to default profiles: default
+2022-12-07 16:40:44 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+2022-12-07 16:40:44 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:29)
+Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 27 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:135)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:121)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:62)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:49)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:147)
+	... 30 common frames omitted
+2022-12-07 16:42:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication on LAPTOP-86U4U8ED with PID 18732 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-12-07 16:42:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to default profiles: default
+2022-12-07 16:42:31 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+2022-12-07 16:42:31 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:29)
+Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 27 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:135)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:121)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:62)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:49)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:147)
+	... 30 common frames omitted
+2022-12-07 16:47:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication on LAPTOP-86U4U8ED with PID 11352 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-12-07 16:47:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to default profiles: default
+2022-12-07 16:47:19 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+2022-12-07 16:47:19 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:29)
+Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 27 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:135)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:121)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:62)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:49)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:147)
+	... 30 common frames omitted
+2022-12-07 16:57:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Starting TwitterToKafkaApplication on LAPTOP-86U4U8ED with PID 12848 (C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes started by Lenovo in C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo)
+2022-12-07 16:57:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - No active profile set, falling back to default profiles: default
+2022-12-07 16:57:20 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-07 16:57:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-07 16:57:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-07 16:57:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670428641051
+2022-12-07 16:57:23 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2022-12-07 16:57:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Started TwitterToKafkaApplication in 4.319 seconds (JVM running for 6.7)
+2022-12-07 16:57:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - Start run ....
+2022-12-07 16:57:23 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-12-07 16:57:23 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-12-07 16:57:23 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-12-07 16:57:23 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-12-07 16:57:23 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created filter for twitter stream for keywords : [Maroc, Morocco, World cup, Coupe du monde, Espagne, Morocco vs Spain]
+2022-12-07 16:57:28 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Morocco
+2022-12-07 16:57:32 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @xGPhilosophy: Teams who have won every World Cup game on xG:
+
+◎ Brazil 🇧🇷 
+◎ Argentina 🇦🇷 sending to kafka topic twitter-topic
+2022-12-07 16:57:33 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1490925956416090112, "id": 1600519863306518529, "text": "RT @xGPhilosophy: Teams who have won every World Cup game on xG:\n\n◎ Brazil 🇧🇷 \n◎ Argentina 🇦🇷", "createdAt": 1670428646000}' to topic='twitter-topic'
+2022-12-07 16:57:33 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-12-07 16:57:33 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-07 16:57:33 [main] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2022-12-07 16:57:33 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-07 16:57:33 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-07 16:57:33 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670428653177
+2022-12-07 16:57:33 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: OVUwHNtMQ0SgKtfXZ_bRmg
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Japanese Football Team Manager Bows Down to Supporters After Their Exit from FIFA World Cup 2022
+https://t.co/5UUe8MBUwL sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1559807163626930182, "id": 1600519860123062278, "text": "Japanese Football Team Manager Bows Down to Supporters After Their Exit from FIFA World Cup 2022\nhttps://t.co/5UUe8MBUwL", "createdAt": 1670428645000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Marwan60922196 @falckovitch93 @TebbouneAmadjid T’en a pas marre de pleurer toi ?? Depuis le début de la Coupe du Monde rien que tu pleures, tu te plains parce que des algériens soutiennent le Maroc ou la Tunisie ! T’a la mémoire courte ? 2010 et 2014, t’a oublié ?! 
+
+Apaise ton cœur Akhy, t’y changera rien, c’est la vie 😉 https://t.co/yfhSFlrB5G sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1599863361684049928, "id": 1600519865185587203, "text": "@Marwan60922196 @falckovitch93 @TebbouneAmadjid T\u2019en a pas marre de pleurer toi ?? Depuis le début de la Coupe du Monde rien que tu pleures, tu te plains parce que des algériens soutiennent le Maroc ou la Tunisie ! T\u2019a la mémoire courte ? 2010 et 2014, t\u2019a oublié ?! \n\nApaise ton cœur Akhy, t\u2019y changera rien, c\u2019est la vie 😉 https://t.co/yfhSFlrB5G", "createdAt": 1670428646000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @UTDTrey England might actually win France on a thin margin. sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1394968686532997120, "id": 1600519866779406337, "text": "@UTDTrey England might actually win France on a thin margin.", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @theplantainshow: Morocco beat Spain but it wasn’t as shocking as it seems.
+
+We discussed Diaspora talent playing for their mother/fathe… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2503069883, "id": 1600519864367693824, "text": "RT @theplantainshow: Morocco beat Spain but it wasn\u2019t as shocking as it seems.\n\nWe discussed Diaspora talent playing for their mother/fathe\u2026", "createdAt": 1670428646000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @vdpk33 @jerome_riviere dans leur tete ils ne sont pas francais! point barre! sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 287639273, "id": 1600519869207822336, "text": "@vdpk33 @jerome_riviere dans leur tete ils ne sont pas francais! point barre!", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @InterTvSpanish @__frandz @fifaworldcup_es Spain 1019 passes, Morocco 304😂
+Spain 77% acquisition, Morocco 23% acquisition
+Spain 8 corner kicks, Morocco, nothing
+Spain 2 Morocco shot 3 shots in the air and lost them themselves because they did not get a corner
+Simply , Morocco relied on the luck of penalty kicks and hahah sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1325782455123644417, "id": 1600519869224681473, "text": "@InterTvSpanish @__frandz @fifaworldcup_es Spain 1019 passes, Morocco 304😂\nSpain 77% acquisition, Morocco 23% acquisition\nSpain 8 corner kicks, Morocco, nothing\nSpain 2 Morocco shot 3 shots in the air and lost them themselves because they did not get a corner\nSimply , Morocco relied on the luck of penalty kicks and hahah", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @AFTVMedia David had a poor World Cup for Canada, but could be a bargain as a result. Would love to see him at the Emirates. sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 466156604, "id": 1600519865659441152, "text": "@AFTVMedia David had a poor World Cup for Canada, but could be a bargain as a result. Would love to see him at the Emirates.", "createdAt": 1670428646000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text The lil boy singing too😭😭😭😭😭 https://t.co/b1T0IBq5ki sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1512360465220849666, "id": 1600519868243390464, "text": "The lil boy singing too😭😭😭😭😭 https://t.co/b1T0IBq5ki", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @thenanaaba: Man like Derek Boateng.  https://t.co/NnfnyOVLbU sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 740168881990475776, "id": 1600519866464849921, "text": "RT @thenanaaba: Man like Derek Boateng.  https://t.co/NnfnyOVLbU", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CricCrazyJohns: Bangladesh in home ODI series since 2015 World Cup:
+
+Beat Pak
+Beat Ind
+Beat Sa
+Beat Zim
+Beat Afg
+Lost to Eng
+Beat Zim
+B… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 774587112683294720, "id": 1600519865907150849, "text": "RT @CricCrazyJohns: Bangladesh in home ODI series since 2015 World Cup:\n\nBeat Pak\nBeat Ind\nBeat Sa\nBeat Zim\nBeat Afg\nLost to Eng\nBeat Zim\nB\u2026", "createdAt": 1670428646000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JMNDComps: Ramos replaced Ronaldo and now has more World Cup knockout goals than him in his first ever World Cup start 😭😭😭😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1087295882779938816, "id": 1600519867903483904, "text": "RT @JMNDComps: Ramos replaced Ronaldo and now has more World Cup knockout goals than him in his first ever World Cup start 😭😭😭😭", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @paulocoelho Je vous aimes Mr Paulo..
+Un grand salut pour vous du Maroc sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 969331658905223168, "id": 1600519866913628161, "text": "@paulocoelho Je vous aimes Mr Paulo..\nUn grand salut pour vous du Maroc", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text One of Amy's uncles prefers beer in a warmed up glass and it's an absolutely wild move
+
+https://t.co/tlqNjv34RP sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 20189287, "id": 1600519869220388865, "text": "One of Amy's uncles prefers beer in a warmed up glass and it's an absolutely wild move\n\nhttps://t.co/tlqNjv34RP", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @F_Desouche: Émeutes à Fréjus (83) après la qualification du Maroc : le président de l’Agglomération annonce suspendre les aides pour la… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 586610649, "id": 1600519853395382277, "text": "RT @F_Desouche: Émeutes à Fréjus (83) après la qualification du Maroc : le président de l\u2019Agglomération annonce suspendre les aides pour la\u2026", "createdAt": 1670428643000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @RMFrench_: 🚨| L’Espagne très Europa League de Luis Enrique est éliminé de la #FIFAWorldCup ❌ sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1298340399661092864, "id": 1600519871686647810, "text": "RT @RMFrench_: 🚨| L\u2019Espagne très Europa League de Luis Enrique est éliminé de la #FIFAWorldCup ❌", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @gandalfcryptto: Been doing well on my #WorldCup bets.  So let's do a #Giveaway! 
+
+$200 in 48 hours
+Just ❤️and RT 
+And tell me who you t… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1479723028858556422, "id": 1600519870567022593, "text": "RT @gandalfcryptto: Been doing well on my #WorldCup bets.  So let's do a #Giveaway! \n\n$200 in 48 hours\nJust ❤️and RT \nAnd tell me who you t\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @gandalfcryptto: Been doing well on my #WorldCup bets.  So let's do a #Giveaway! 
+
+$200 in 48 hours
+Just ❤️and RT 
+And tell me who you t… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1542928188950646784, "id": 1600519872047419393, "text": "RT @gandalfcryptto: Been doing well on my #WorldCup bets.  So let's do a #Giveaway! \n\n$200 in 48 hours\nJust ❤️and RT \nAnd tell me who you t\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TheYomiKazeem: There are no World Cup matches over the next two days. 
+
+The next best thing? Watching my YouTube video on how much it t… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 372550479, "id": 1600519872978509828, "text": "RT @TheYomiKazeem: There are no World Cup matches over the next two days. \n\nThe next best thing? Watching my YouTube video on how much it t\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @AzizDaouda Je me demande si c'était le cas des Houkistes que serait il leurs couvertures médiatiques sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1566771234439839746, "id": 1600519872223629318, "text": "@AzizDaouda Je me demande si c'était le cas des Houkistes que serait il leurs couvertures médiatiques", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @AlietteML @orangebusiness @rym_sahnoun @ZitouneWassila @gustavosbraz Thank you 🙏 Aliette, a shocking win that made Morocco the first Arab nation to reach quarterfinal of World Cup sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1225604330, "id": 1600519873133776896, "text": "@AlietteML @orangebusiness @rym_sahnoun @ZitouneWassila @gustavosbraz Thank you 🙏 Aliette, a shocking win that made Morocco the first Arab nation to reach quarterfinal of World Cup", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @BrasilEdition N 2 - a 1
+B 4-c 2
+E 1 - f 2
+M3-p 1 sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 876847839996854272, "id": 1600519870533505026, "text": "@BrasilEdition N 2 - a 1\nB 4-c 2\nE 1 - f 2\nM3-p 1", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Nabil_djellit À bien y réfléchir il n'a pas tort sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1597656980977590273, "id": 1600519870185086976, "text": "@Nabil_djellit À bien y réfléchir il n'a pas tort", "createdAt": 1670428647000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @PoliceRealites Allez faire sa au Qatar et au Maroc …..
+Ça rigolera moins après sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1457876893, "id": 1600519871032328192, "text": "@PoliceRealites Allez faire sa au Qatar et au Maroc \u2026..\nÇa rigolera moins après", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @sk_bongomin93: Qatar put their whole in crafting these world cup stadia, it could turn into a night club anytime, the world was jamming… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 989306044332560384, "id": 1600519871741181953, "text": "RT @sk_bongomin93: Qatar put their whole in crafting these world cup stadia, it could turn into a night club anytime, the world was jamming\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Clive and Ally easily the best commentary pair! @ITVSport need to wake up… https://t.co/FYvRMyiinH sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 55322377, "id": 1600519871086956545, "text": "Clive and Ally easily the best commentary pair! @ITVSport need to wake up\u2026 https://t.co/FYvRMyiinH", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:34 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UsherKomugisha: Born in Madrid, Achraf Hakimi nets the final goal that downs Spain 🇪🇸 in the Round of 16 to inspire Morocco 🇲🇦 to the l… sending to kafka topic twitter-topic
+2022-12-07 16:57:34 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1352604226640367616, "id": 1600519873204916224, "text": "RT @UsherKomugisha: Born in Madrid, Achraf Hakimi nets the final goal that downs Spain 🇪🇸 in the Round of 16 to inspire Morocco 🇲🇦 to the l\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 819886473474351110, "id": 1600519874819792897, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @MoroccoIntel @saveflix sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1394426958411350020, "id": 1600519875570667520, "text": "@MoroccoIntel @saveflix", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ECiotti Boum! sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3144328173, "id": 1600519874299805697, "text": "@ECiotti Boum!", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FOXSoccer: What the day feels like when there are no FIFA World Cup games on for the first time in 17 days ⬇️ https://t.co/lTFo6j5b0Q sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 62707999, "id": 1600519874677293059, "text": "RT @FOXSoccer: What the day feels like when there are no FIFA World Cup games on for the first time in 17 days ⬇️ https://t.co/lTFo6j5b0Q", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SCHINO_EN: No World Cup today 🥹 sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 296512079, "id": 1600519875633496065, "text": "RT @SCHINO_EN: No World Cup today 🥹", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ciiiilukbaaa: Rekomendasi Ootd Random✨
+
+- A Thread ••
+
+Breaking News Gowon Jorji Hiburan Hobi Theboys Tegal STB Mahal Thank You Morocco… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1565359926800949253, "id": 1600519874006376448, "text": "RT @ciiiilukbaaa: Rekomendasi Ootd Random✨\n\n- A Thread \u2022\u2022\n\nBreaking News Gowon Jorji Hiburan Hobi Theboys Tegal STB Mahal Thank You Morocco\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @neuktaee: White 🤍🤍
+
+Yen Jepang STB Mahal Tegal KUHP Maroko Cinta Beruntung Spanyol Sehat Morocco Bono Spain Keluarga Got the boom Jorji… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1563937962718482433, "id": 1600519873255288833, "text": "RT @neuktaee: White 🤍🤍\n\nYen Jepang STB Mahal Tegal KUHP Maroko Cinta Beruntung Spanyol Sehat Morocco Bono Spain Keluarga Got the boom Jorji\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @J_McGrody Yes. Nothing wrong with this.
+
+The west has displayed its double standard time and time again with their politicization of sports on their turf, now let the Arabs be. You’re getting a taste of your own medicine. sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1595073876706344960, "id": 1600519874324926465, "text": "@J_McGrody Yes. Nothing wrong with this.\n\nThe west has displayed its double standard time and time again with their politicization of sports on their turf, now let the Arabs be. You\u2019re getting a taste of your own medicine.", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @KMbappe Good Luck in the next match maroc sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1548985055065817090, "id": 1600519875524546562, "text": "@KMbappe Good Luck in the next match maroc", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ActuFoot_: 🚨 RECORD ! À 39 ans et 9 mois, Pepe devient le plus vieux buteur de l'Histoire dans un match à élimination directe de Coupe… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 593802241, "id": 1600519874849263616, "text": "RT @ActuFoot_: 🚨 RECORD ! À 39 ans et 9 mois, Pepe devient le plus vieux buteur de l'Histoire dans un match à élimination directe de Coupe\u2026", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ligamx_fr Il doit faire 2026 même en temps que troisième gardien c’est impensable qu’il s’arrête là sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1541187628384518144, "id": 1600519874736017408, "text": "@ligamx_fr Il doit faire 2026 même en temps que troisième gardien c\u2019est impensable qu\u2019il s\u2019arrête là", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @_BeFootball: Le Maroc n’a encaissé qu’un seul but depuis le début de la Coupe du Monde : un csc d’Aguerd. 🇲🇦 
+
+Même en séances de tirs… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3144942663, "id": 1600519874589196289, "text": "RT @_BeFootball: Le Maroc n\u2019a encaissé qu\u2019un seul but depuis le début de la Coupe du Monde : un csc d\u2019Aguerd. 🇲🇦 \n\nMême en séances de tirs\u2026", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ShireenMazari1: Well done Morocco - great win over Spain in FIFA World Cup. sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1579531308132405249, "id": 1600519874266251266, "text": "RT @ShireenMazari1: Well done Morocco - great win over Spain in FIFA World Cup.", "createdAt": 1670428648000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Omojuwa: Q: Why should YOU be voted as president?
+
+A: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn’t qualify. Now, N… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 278353097, "id": 1600519876275314689, "text": "RT @Omojuwa: Q: Why should YOU be voted as president?\n\nA: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn\u2019t qualify. Now, N\u2026", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @BLEUKLEINN: Festival d’amour et de paix aujourd’hui sur Twitter…. Continuez à nous raconter que ce n’est pas de #Antisemitisme mais de… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 707191374911836161, "id": 1600519877885829120, "text": "RT @BLEUKLEINN: Festival d\u2019amour et de paix aujourd\u2019hui sur Twitter\u2026. Continuez à nous raconter que ce n\u2019est pas de #Antisemitisme mais de\u2026", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:35 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Omojuwa: Q: Why should YOU be voted as president?
+
+A: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn’t qualify. Now, N… sending to kafka topic twitter-topic
+2022-12-07 16:57:35 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1247750651737587713, "id": 1600519881950208002, "text": "RT @Omojuwa: Q: Why should YOU be voted as president?\n\nA: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn\u2019t qualify. Now, N\u2026", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SportPesa: Yessssssssssss! 
+
+Morocco wins it on penalties!! 
+
+AFRICA TO THE WORLD! #QataaKulose sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1598900770480472065, "id": 1600519880528351238, "text": "RT @SportPesa: Yessssssssssss! \n\nMorocco wins it on penalties!! \n\nAFRICA TO THE WORLD! #QataaKulose", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Vote often,  vote Boz! https://t.co/RkMGsBCVxM sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1467382850, "id": 1600519880494784512, "text": "Vote often,  vote Boz! https://t.co/RkMGsBCVxM", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Ben oui mais comme la Russie il y a 4 ans. En même temps quand on fait partie des favoris on doit être capable d'anticiper cette stratégie des outsiders et de trouver des solutions en cours de jeune. Et quand on se prive d'Iglesias ou d'Aspas, il y a pas d'alternative en attaque https://t.co/WYiOWu6oMS sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 177860978, "id": 1600519877898518531, "text": "Ben oui mais comme la Russie il y a 4 ans. En même temps quand on fait partie des favoris on doit être capable d'anticiper cette stratégie des outsiders et de trouver des solutions en cours de jeune. Et quand on se prive d'Iglesias ou d'Aspas, il y a pas d'alternative en attaque https://t.co/WYiOWu6oMS", "createdAt": 1670428649000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @phaverapp: Tonight's match maybe is the last match of @TeamMessi in the World Cup. Come to Phaver app and guess the score! Chances to g… sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 971966178850557952, "id": 1600519879672868864, "text": "RT @phaverapp: Tonight's match maybe is the last match of @TeamMessi in the World Cup. Come to Phaver app and guess the score! Chances to g\u2026", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @footsen221 Il n'a pas répondu à nos attentes. 
+L'un des flops lors du match contre l'Angleterre. sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1325481735669358592, "id": 1600519879680991234, "text": "@footsen221 Il n'a pas répondu à nos attentes. \nL'un des flops lors du match contre l'Angleterre.", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FOXSoccer: What the day feels like when there are no FIFA World Cup games on for the first time in 17 days ⬇️ https://t.co/lTFo6j5b0Q sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1123683749978198016, "id": 1600519880125472769, "text": "RT @FOXSoccer: What the day feels like when there are no FIFA World Cup games on for the first time in 17 days ⬇️ https://t.co/lTFo6j5b0Q", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #INDvsBAN #UAAPSeason85 #Maroc #ค่าแรงขั้นต่ํา600บาท #الرياض_الان #ปฏิทินช่อง3ปี2566 #GFvip #CristinaCondenada #bist100 #ViratKohli𓃵 #indvsbang https://t.co/gj4h9nokuT sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1431420779305086983, "id": 1600519879911694336, "text": "#INDvsBAN #UAAPSeason85 #Maroc #ค่าแรงขั้นต่ํา600บาท #الرياض_الان #ปฏิทินช่อง3ปี2566 #GFvip #CristinaCondenada #bist100 #ViratKohli𓃵 #indvsbang https://t.co/gj4h9nokuT", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CerfiaFoot: 🚨 La soeur de Cristiano Ronaldo lui a demandé de QUITTER la Coupe du monde ! 😱
+
+(🗞️ @TGoalpost) https://t.co/rvMmHLX5Ea sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1827619914, "id": 1600519883510398982, "text": "RT @CerfiaFoot: 🚨 La soeur de Cristiano Ronaldo lui a demandé de QUITTER la Coupe du monde ! 😱\n\n(🗞️ @TGoalpost) https://t.co/rvMmHLX5Ea", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text PTDRRRR mais la première story j'ai rarement vu une volonté de nuire pareille https://t.co/aTmmj6s3Ts sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 712976600120344577, "id": 1600519883808284675, "text": "PTDRRRR mais la première story j'ai rarement vu une volonté de nuire pareille https://t.co/aTmmj6s3Ts", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:36 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SaladNFL: A reminder that if an African team qualifies to the semi final of this World Cup, Africa will have 11 spots in the next World… sending to kafka topic twitter-topic
+2022-12-07 16:57:36 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1426127660, "id": 1600519882801553408, "text": "RT @SaladNFL: A reminder that if an African team qualifies to the semi final of this World Cup, Africa will have 11 spots in the next World\u2026", "createdAt": 1670428650000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Jungkook_SNS: Dreamers by Jungkook has topped multiple charts in Morocco after yesterday's win.
+
+#1. Apple Music Morocco Top songs (New… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1541022735169916929, "id": 1600519883594567681, "text": "RT @Jungkook_SNS: Dreamers by Jungkook has topped multiple charts in Morocco after yesterday's win.\n\n#1. Apple Music Morocco Top songs (New\u2026", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @UTDTrey Man utd play Cadiz tonight. sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1303724013030715392, "id": 1600519885276254209, "text": "@UTDTrey Man utd play Cadiz tonight.", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @JPCogs More soccer is never the answer. sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 242557553, "id": 1600519886354137090, "text": "@JPCogs More soccer is never the answer.", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @freedompeaceee: Miskine mon pays me fera jamais vivre ce genre d'émotion même une simple qualification à la coupe du monde. Quand tu vo… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1082397018759327746, "id": 1600519884617687042, "text": "RT @freedompeaceee: Miskine mon pays me fera jamais vivre ce genre d'émotion même une simple qualification à la coupe du monde. Quand tu vo\u2026", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1208824537820868608, "id": 1600519883929927686, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @TheSaudisNFT @roberto_saudi @HeyItsMeTheDev @Foryinathx99 @moonbriefs @Youteentron99 @Yxzy221 @akamarcus11 sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 909338438423412736, "id": 1600519886203133952, "text": "@TheSaudisNFT @roberto_saudi @HeyItsMeTheDev @Foryinathx99 @moonbriefs @Youteentron99 @Yxzy221 @akamarcus11", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Honeyfarsafi: Y'all trying to force Africa on morocco when they don't even want to identify with us😭😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1416425530434404352, "id": 1600519887197274115, "text": "RT @Honeyfarsafi: Y'all trying to force Africa on morocco when they don't even want to identify with us😭😭", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brfootball: World Cup scorers by club:
+
+PSG: 10
+Barcelona: 8
+Chelsea: 6
+Manchester City: 6
+Manchester United: 6
+Milan: 5
+Tottenham: 5
+A… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1391709128192561153, "id": 1600519885775323138, "text": "RT @brfootball: World Cup scorers by club:\n\nPSG: 10\nBarcelona: 8\nChelsea: 6\nManchester City: 6\nManchester United: 6\nMilan: 5\nTottenham: 5\nA\u2026", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brfootball: World Cup scorers by club:
+
+PSG: 10
+Barcelona: 8
+Chelsea: 6
+Manchester City: 6
+Manchester United: 6
+Milan: 5
+Tottenham: 5
+A… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 849823391318249472, "id": 1600519886601609217, "text": "RT @brfootball: World Cup scorers by club:\n\nPSG: 10\nBarcelona: 8\nChelsea: 6\nManchester City: 6\nManchester United: 6\nMilan: 5\nTottenham: 5\nA\u2026", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text PSG and Manchester United have players in 6/8 teameremaining at the World Cup. Who else has that much? sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1441031990, "id": 1600519886937243649, "text": "PSG and Manchester United have players in 6/8 teameremaining at the World Cup. Who else has that much?", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CNN: "His name was #MehranSamak" 
+
+Iranian security forces have killed an anti-government protester celebrating the World Cup defeat, a… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 975738395770138625, "id": 1600519887176273921, "text": "RT @CNN: \"His name was #MehranSamak\" \n\nIranian security forces have killed an anti-government protester celebrating the World Cup defeat, a\u2026", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MaulCKX: L'Espagne en loser bracket dinguerie quand même c'est cruel pour les petites nations, dommage… https://t.co/z6HscXytsS sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4398065117, "id": 1600519887390220291, "text": "RT @MaulCKX: L'Espagne en loser bracket dinguerie quand même c'est cruel pour les petites nations, dommage\u2026 https://t.co/z6HscXytsS", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text World Cup 2022: Cristiano Ronaldo replacement Goncalo Ramos runs riot for Portugal https://t.co/7ztO9zynSu sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 832142567861006336, "id": 1600519888325423104, "text": "World Cup 2022: Cristiano Ronaldo replacement Goncalo Ramos runs riot for Portugal https://t.co/7ztO9zynSu", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Hey_Ajneb Oui je le tente je pense le voir titu contre le Maroc et son expérience peux faire très mal sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1179879517244084225, "id": 1600519886781956099, "text": "@Hey_Ajneb Oui je le tente je pense le voir titu contre le Maroc et son expérience peux faire très mal", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TrollFootball: Me right now when there are no World Cup games today and tomorrow. https://t.co/nINoqbuCms sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2546964183, "id": 1600519889038594050, "text": "RT @TrollFootball: Me right now when there are no World Cup games today and tomorrow. https://t.co/nINoqbuCms", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Tempête de critiques à la suite du transport de milliers de mètres cubes de neige au Grand-Bornand
+ En partie conservée depuis l’hiver dernier sous une couche de sciure, la neige nécessaire à la préparation de la piste de Coupe du monde de biathlon a été acheminée par camion. https://t.co/kkRGjdlFcW sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 773280288239656960, "id": 1600519886903590912, "text": "Tempête de critiques à la suite du transport de milliers de mètres cubes de neige au Grand-Bornand\n En partie conservée depuis l\u2019hiver dernier sous une couche de sciure, la neige nécessaire à la préparation de la piste de Coupe du monde de biathlon a été acheminée par camion. https://t.co/kkRGjdlFcW", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Can’t find that club from the Spanish capital. https://t.co/cgxZGzabrg sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1379498990136401932, "id": 1600519888363192320, "text": "Can\u2019t find that club from the Spanish capital. https://t.co/cgxZGzabrg", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @GeekEvasion @Deudley2 @la_vagueverte @WMghrbGigachad Des pays liés par la culture, la religion, l’histoire, des familles divisées entre les deux et même des économies qui pourraient être complémentaires si ce n’est les stupidités des gouvernements, mais si tu qu’on est des ennemis jurés… sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 950160843253211141, "id": 1600519888237363203, "text": "@GeekEvasion @Deudley2 @la_vagueverte @WMghrbGigachad Des pays liés par la culture, la religion, l\u2019histoire, des familles divisées entre les deux et même des économies qui pourraient être complémentaires si ce n\u2019est les stupidités des gouvernements, mais si tu qu\u2019on est des ennemis jurés\u2026", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @SHBismyname @utdcynical Do you know the number of times Netherlands 🇳🇱 have been to the World Cup final and didn’t win? sending to kafka topic twitter-topic
+2022-12-07 16:57:37 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 799150188, "id": 1600519886630944769, "text": "@SHBismyname @utdcynical Do you know the number of times Netherlands 🇳🇱 have been to the World Cup final and didn\u2019t win?", "createdAt": 1670428651000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @zCloakNetwork @Legal_DAO @Web3Go @BuidlerDAO @joinmirrorworld @TusimaNetwork @SnapFingersDAO @moledao_io @flock_io @macondo_town 🥳🥳🥳🥳 sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1522839973619187712, "id": 1600519890167009280, "text": "@zCloakNetwork @Legal_DAO @Web3Go @BuidlerDAO @joinmirrorworld @TusimaNetwork @SnapFingersDAO @moledao_io @flock_io @macondo_town 🥳🥳🥳🥳", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1891269895, "id": 1600519889172701186, "text": "RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Are you doing to keep supporting Palestine when they never supported our Amazigh cause? They’re busy playing the victims while perpetuating their Pan-Arab interests! 
+
+Where did she get the audacity to talk in favour of PanArab interests on OUR Amazigh land. https://t.co/tQ1NNHLGjR sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1547692793300021252, "id": 1600519892960247812, "text": "Are you doing to keep supporting Palestine when they never supported our Amazigh cause? They\u2019re busy playing the victims while perpetuating their Pan-Arab interests! \n\nWhere did she get the audacity to talk in favour of PanArab interests on OUR Amazigh land. https://t.co/tQ1NNHLGjR", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @HeleneLaporteRN: 🔴 À #Lille, #Nice où encore #Amiens, la situation dégénère laissant place à des scènes de guérillas urbaines pour une… sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1472137452483747843, "id": 1600519891857072128, "text": "RT @HeleneLaporteRN: 🔴 À #Lille, #Nice où encore #Amiens, la situation dégénère laissant place à des scènes de guérillas urbaines pour une\u2026", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @holicforlife: Congratulations morocco 🇲🇦 #morocco_spain https://t.co/lEss83LKj1 sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1136393925348847616, "id": 1600519890880065536, "text": "RT @holicforlife: Congratulations morocco 🇲🇦 #morocco_spain https://t.co/lEss83LKj1", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @BBCSport: ⭐️ Lionel Messi, Cristiano Ronaldo, Kylian Mbappe, Neymar ⭐️ 
+
+All the big names are ready to do battle in a stellar World Cu… sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2229135579, "id": 1600519893589397505, "text": "RT @BBCSport: ⭐️ Lionel Messi, Cristiano Ronaldo, Kylian Mbappe, Neymar ⭐️ \n\nAll the big names are ready to do battle in a stellar World Cu\u2026", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @MJ_007Club Shakeela kahin kissi rohingya ki begum to nahin ?? sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1597118198574624768, "id": 1600519893841248256, "text": "@MJ_007Club Shakeela kahin kissi rohingya ki begum to nahin ??", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @FabrizioRomano https://t.co/v0pdEc95vl sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1444961870184599555, "id": 1600519892540612610, "text": "@FabrizioRomano https://t.co/v0pdEc95vl", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @jikookcals DIS LES TERMES sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1226062948201836544, "id": 1600519894289768449, "text": "@jikookcals DIS LES TERMES", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text https://t.co/h4aZoJha5d sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1460092549, "id": 1600519893698347009, "text": "https://t.co/h4aZoJha5d", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @allkpop: [UCC] Grammy-winning producer RedOne says #Jungkook has already made History as a Solo Artist with his hit World Cup song “Dre… sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1253376726039552002, "id": 1600519890842312704, "text": "RT @allkpop: [UCC] Grammy-winning producer RedOne says #Jungkook has already made History as a Solo Artist with his hit World Cup song \u201CDre\u2026", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @westenthu: wst pas World Cup 2010, aku bingung kenapa bendera timnas Inggris itu 🏴󠁧󠁢󠁥󠁮󠁧󠁿 bukan 🇬🇧, aku pikir emang ada bendera khusus b… sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3030913519, "id": 1600519890837774336, "text": "RT @westenthu: wst pas World Cup 2010, aku bingung kenapa bendera timnas Inggris itu 🏴󠁧󠁢󠁥󠁮󠁧󠁿 bukan 🇬🇧, aku pikir emang ada bendera khusus b\u2026", "createdAt": 1670428652000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Omojuwa 🤣🤣🤣🤣🤣🤣🤣 sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 938676704796606464, "id": 1600519897481723905, "text": "@Omojuwa 🤣🤣🤣🤣🤣🤣🤣", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @lyonmag: #Lyon : des supporters du #Maroc s’en prennent à une femme coincée dans les embouteillages en tapant sur son véhicule puis en… sending to kafka topic twitter-topic
+2022-12-07 16:57:39 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1361326053009022978, "id": 1600519894914797572, "text": "RT @lyonmag: #Lyon : des supporters du #Maroc s\u2019en prennent à une femme coincée dans les embouteillages en tapant sur son véhicule puis en\u2026", "createdAt": 1670428653000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SEXyWrestlingB1: Wrestling's World Cup of Asses - 2nd Round 🏆🍑
+
+PVZ vs Bayley https://t.co/GF3MYU69a6 sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1056349472073097217, "id": 1600519897934700545, "text": "RT @SEXyWrestlingB1: Wrestling's World Cup of Asses - 2nd Round 🏆🍑\n\nPVZ vs Bayley https://t.co/GF3MYU69a6", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @mubeenr25: The reality is that #Morocco and the entire Muslim Ummah lost today. 
+
+The scholar with arguably the highest chains of Hadit… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1207431941177389057, "id": 1600519897645195264, "text": "RT @mubeenr25: The reality is that #Morocco and the entire Muslim Ummah lost today. \n\nThe scholar with arguably the highest chains of Hadit\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1563977022, "id": 1600519897653673984, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ksarpongd19 There are some exceptions like Morocco and the Netherlands but the general pattern is this sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4837300329, "id": 1600519898165350400, "text": "@ksarpongd19 There are some exceptions like Morocco and the Netherlands but the general pattern is this", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text World Cup 2022: Cristiano Ronaldo replacement Goncalo Ramos runs riot for Portugal https://t.co/klmFKoPocT sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 832052154198327296, "id": 1600519898299478019, "text": "World Cup 2022: Cristiano Ronaldo replacement Goncalo Ramos runs riot for Portugal https://t.co/klmFKoPocT", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @F_Desouche: Émeutes à Fréjus (83) après la qualification du Maroc : le président de l’Agglomération annonce suspendre les aides pour la… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 510332094, "id": 1600519897020252160, "text": "RT @F_Desouche: Émeutes à Fréjus (83) après la qualification du Maroc : le président de l\u2019Agglomération annonce suspendre les aides pour la\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PSGofLegend: Hakimi, joueur marocain né en Espagne, qui marque un but sur panenka qui élimine l'Espagne et ensuite fait la célébration… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 336671102, "id": 1600519898223869952, "text": "RT @PSGofLegend: Hakimi, joueur marocain né en Espagne, qui marque un but sur panenka qui élimine l'Espagne et ensuite fait la célébration\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 910568111207673856, "id": 1600519898249166848, "text": "RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Lxmpard @TheAthleticFC @AnAbnos @jaydmharris Lol nice copium sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1583121789542178816, "id": 1600519901638234114, "text": "@Lxmpard @TheAthleticFC @AnAbnos @jaydmharris Lol nice copium", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @andre_makiza: @lnstantFoot Moi je trouve ça honteux de quémander de la considération! Je supporte le Maroc peu importe à qui il veulent… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 977651575840821250, "id": 1600519902238048257, "text": "RT @andre_makiza: @lnstantFoot Moi je trouve ça honteux de quémander de la considération! Je supporte le Maroc peu importe à qui il veulent\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @souleyyk: Pedri et Gavi ce soir face au Maroc https://t.co/LmZ8U3mhpL sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 989894329824145409, "id": 1600519899364868096, "text": "RT @souleyyk: Pedri et Gavi ce soir face au Maroc https://t.co/LmZ8U3mhpL", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @mubeenr25: The reality is that #Morocco and the entire Muslim Ummah lost today. 
+
+The scholar with arguably the highest chains of Hadit… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2251087153, "id": 1600519898316144640, "text": "RT @mubeenr25: The reality is that #Morocco and the entire Muslim Ummah lost today. \n\nThe scholar with arguably the highest chains of Hadit\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @PSGofLegend: Hakimi, joueur marocain né en Espagne, qui marque un but sur panenka qui élimine l'Espagne et ensuite fait la célébration… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 372434542, "id": 1600519899125776387, "text": "RT @PSGofLegend: Hakimi, joueur marocain né en Espagne, qui marque un but sur panenka qui élimine l'Espagne et ensuite fait la célébration\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 377229592, "id": 1600519899104804869, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @iMiaSanMia: Ibrahima Konaté: "I'm not surprised by Upamecano's performances. I know what he's capable of, having played with him in Lei… sending to kafka topic twitter-topic
+2022-12-07 16:57:40 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1508850980447731721, "id": 1600519900296003585, "text": "RT @iMiaSanMia: Ibrahima Konaté: \"I'm not surprised by Upamecano's performances. I know what he's capable of, having played with him in Lei\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Jungkook_SNS: Dreamers by Jungkook has topped multiple charts in Morocco after yesterday's win.
+
+#1. Apple Music Morocco Top songs (New… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1139570513687322625, "id": 1600519899595546625, "text": "RT @Jungkook_SNS: Dreamers by Jungkook has topped multiple charts in Morocco after yesterday's win.\n\n#1. Apple Music Morocco Top songs (New\u2026", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @murtazawahab1: Well played Morocco 🇲🇦 first time in the quarter finals sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 456416622, "id": 1600519899566202881, "text": "RT @murtazawahab1: Well played Morocco 🇲🇦 first time in the quarter finals", "createdAt": 1670428654000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @SowetanLIVE @Ernst_JohannesM @robertmarawa HEY Friends, have you tried out investing Bitcoin with SIR @Andreasjeremy0?? Are you tired of  sending cash to account Managers in order for them to  trade on your behalf???  DM  @Andreasjeremy0 for an expertise training  and thank me later 🤞💪🥰 sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1306959563472732172, "id": 1600519903274049536, "text": "@SowetanLIVE @Ernst_JohannesM @robertmarawa HEY Friends, have you tried out investing Bitcoin with SIR @Andreasjeremy0?? Are you tired of  sending cash to account Managers in order for them to  trade on your behalf???  DM  @Andreasjeremy0 for an expertise training  and thank me later 🤞💪🥰", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FutSheriff: 🚨Rodrygo 🇧🇷 is listed to come as World Cup Phenom🔥🔥
+
+Stats are prediction👋
+
+Make sure to follow @FutSheriff and @Criminal__… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1480594372114763783, "id": 1600519903353737216, "text": "RT @FutSheriff: 🚨Rodrygo 🇧🇷 is listed to come as World Cup Phenom🔥🔥\n\nStats are prediction👋\n\nMake sure to follow @FutSheriff and @Criminal__\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MarkOgden_: Morocco celebrate their win against Spain with a Palestinian flag. Every North African and Middle East team has made sure t… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 561026904, "id": 1600519905199136771, "text": "RT @MarkOgden_: Morocco celebrate their win against Spain with a Palestinian flag. Every North African and Middle East team has made sure t\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @goal Watch highlights of the game at https://t.co/8WlQLIp4TD #watchandearn sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1567875317112643586, "id": 1600519906642268160, "text": "@goal Watch highlights of the game at https://t.co/8WlQLIp4TD #watchandearn", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: Achraf Hakimi was born and raised in Spain and grew up in Real Madrid's academy.
+
+He just sent Spain out of the World Cup with… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1109323106840010752, "id": 1600519905442680832, "text": "RT @ESPNFC: Achraf Hakimi was born and raised in Spain and grew up in Real Madrid's academy.\n\nHe just sent Spain out of the World Cup with\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @theMadridZone: Vinicius Jr's dreams he wrote as a kid:
+
+• Play for the club I love.
+• Win a World Cup.
+• Play for the biggest club in t… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1450521344169369604, "id": 1600519903261429760, "text": "RT @theMadridZone: Vinicius Jr's dreams he wrote as a kid:\n\n\u2022 Play for the club I love.\n\u2022 Win a World Cup.\n\u2022 Play for the biggest club in t\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @PENDUlSM Here's a good solution to all this let Ronaldo win the world cup while contributing something 😀 sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1285612198132424710, "id": 1600519905761181696, "text": "@PENDUlSM Here's a good solution to all this let Ronaldo win the world cup while contributing something 😀", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text #Morocco #morocco_spain #Worlds2022 #WorldCup2022 #Qatar #QatarWorldCup2022 https://t.co/a9mgf4gCex sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 485187061, "id": 1600519904750362630, "text": "#Morocco #morocco_spain #Worlds2022 #WorldCup2022 #Qatar #QatarWorldCup2022 https://t.co/a9mgf4gCex", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Only say Hi if Would you eat my pussy while I suck your dick 😘😘 #TrumpIsDone #bombunuhdiri #scaramouche #Morocco #lindol #البرتغال_سويسرا #UAAPSeason85 #BlueJays #bombunuhdiri #xxx #Viral https://t.co/SMvOBbOgLI sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1592548327337304066, "id": 1600519902691209216, "text": "Only say Hi if Would you eat my pussy while I suck your dick 😘😘 #TrumpIsDone #bombunuhdiri #scaramouche #Morocco #lindol #البرتغال_سويسرا #UAAPSeason85 #BlueJays #bombunuhdiri #xxx #Viral https://t.co/SMvOBbOgLI", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TeamEricZemmour: Espagne :  Une bagarre éclate dans le centre de Malaga entre supporters Marocains et Espagnols
+#MARESP https://t.co/Sk… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1446492269150932993, "id": 1600519906902024193, "text": "RT @TeamEricZemmour: Espagne :  Une bagarre éclate dans le centre de Malaga entre supporters Marocains et Espagnols\n#MARESP https://t.co/Sk\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: None of these winning sides have won a World Cup knockout game since lifting the trophy 🤯 https://t.co/c1O9oPC2nT sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1562006871388524544, "id": 1600519903920152576, "text": "RT @ESPNFC: None of these winning sides have won a World Cup knockout game since lifting the trophy 🤯 https://t.co/c1O9oPC2nT", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @utdreport: Ten Hag: "We make the players aware of the fact that, after you are out of the World Cup, you have to return to the club and… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 737049319, "id": 1600519903840190469, "text": "RT @utdreport: Ten Hag: \"We make the players aware of the fact that, after you are out of the World Cup, you have to return to the club and\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:41 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TFoot__: Mettre Cristiano Ronaldo sur le banc pour sa dernière Coupe du Monde alors qu’il a porté à lui seul le Portugal pendant plus d… sending to kafka topic twitter-topic
+2022-12-07 16:57:41 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1281264264624459776, "id": 1600519902988832772, "text": "RT @TFoot__: Mettre Cristiano Ronaldo sur le banc pour sa dernière Coupe du Monde alors qu\u2019il a porté à lui seul le Portugal pendant plus d\u2026", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @AgustinGalarza9 @centredevils So getting a back up CDM to a world class one would be your main priority over every other position and player at the world cup? sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1160850598272602112, "id": 1600519902917443585, "text": "@AgustinGalarza9 @centredevils So getting a back up CDM to a world class one would be your main priority over every other position and player at the world cup?", "createdAt": 1670428655000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @_amroali: Morocco celebrates their victory by raising the Palestinian flag 🇵🇸. Palestine has been the winner in this World Cup. Arab re… sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1550899499006042112, "id": 1600519904632913921, "text": "RT @_amroali: Morocco celebrates their victory by raising the Palestinian flag 🇵🇸. Palestine has been the winner in this World Cup. Arab re\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: Morocco players dedicated their World Cup last-16 victory over Spain to Abdelhak Nouri ❤️
+
+The former Netherlands star, who is… sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1560768170067197955, "id": 1600519907027963906, "text": "RT @ESPNFC: Morocco players dedicated their World Cup last-16 victory over Spain to Abdelhak Nouri ❤️\n\nThe former Netherlands star, who is\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @amparocastro61: #Morocco sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1005171986, "id": 1600519905106968576, "text": "RT @amparocastro61: #Morocco", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @dialectichiphop: Again, if this world cup has done anything it's reaffirmed how deeply imbedded the idea of Palestinian liberation and… sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1347566490623602691, "id": 1600519906499481602, "text": "RT @dialectichiphop: Again, if this world cup has done anything it's reaffirmed how deeply imbedded the idea of Palestinian liberation and\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Crazy_Milanista: Today I feel Italian (no world cup games) sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1381129540626477057, "id": 1600519905505419266, "text": "RT @Crazy_Milanista: Today I feel Italian (no world cup games)", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @bbchausa Morocco inshallah 🙏 sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1359098671980306432, "id": 1600519910131744770, "text": "@bbchausa Morocco inshallah 🙏", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @mrmacaronii https://t.co/LmVqqIuSZo sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1536466428794118145, "id": 1600519910442024960, "text": "@mrmacaronii https://t.co/LmVqqIuSZo", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @EmpireMoroccan_ @TrollFootball You won by penalties, don't get carried away, lol
+
+Moreover, immigrating/ migrating to another country won't make Morocco a world power sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1585877724220063750, "id": 1600519908411981825, "text": "@EmpireMoroccan_ @TrollFootball You won by penalties, don't get carried away, lol\n\nMoreover, immigrating/ migrating to another country won't make Morocco a world power", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JulienOdoul: Le #Maroc se qualifie pour les quarts de finale : dégradations, incendies de voitures, violences contre les forces de l’or… sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1279310738662793216, "id": 1600519910161096706, "text": "RT @JulienOdoul: Le #Maroc se qualifie pour les quarts de finale : dégradations, incendies de voitures, violences contre les forces de l\u2019or\u2026", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Joshua_Ubeku: This World Cup might be preparing us to witness one of the greatest clashes in its history. 👀 sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1506588387897192449, "id": 1600519910857269251, "text": "RT @Joshua_Ubeku: This World Cup might be preparing us to witness one of the greatest clashes in its history. 👀", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Crazy_Milanista: Today I feel Italian (no world cup games) sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 53559318, "id": 1600519908164526082, "text": "RT @Crazy_Milanista: Today I feel Italian (no world cup games)", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text An argument that keeps recurring but i doubt would ever be settled is the Messi - Ronaldo one.
+Even if one of them wins the world cup,it still wouldn't be settled.
+I think Messi is the better player while Ronaldo is the greater player. If you get what i mean sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 766316451598888960, "id": 1600519908172992512, "text": "An argument that keeps recurring but i doubt would ever be settled is the Messi - Ronaldo one.\nEven if one of them wins the world cup,it still wouldn't be settled.\nI think Messi is the better player while Ronaldo is the greater player. If you get what i mean", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @JamalMuhannad: @ESPNFC As usual, Ashraf Hakimi goes to his mother to celebrate with her after Morocco's victory ❤️
+
+ https://t.co/rJV3H… sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 470115262, "id": 1600519904825835520, "text": "RT @JamalMuhannad: @ESPNFC As usual, Ashraf Hakimi goes to his mother to celebrate with her after Morocco's victory ❤️\n\n https://t.co/rJV3H\u2026", "createdAt": 1670428656000}' to topic='twitter-topic'
+2022-12-07 16:57:42 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Le360fr: 🇲🇦 | À Dakhla, les habitants du Sahara célèbrent la victoire du Maroc contre l’Espagne
+
+📍 Dakhla 🇲🇦 https://t.co/KH0QKuBVSV sending to kafka topic twitter-topic
+2022-12-07 16:57:42 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 935524238685024256, "id": 1600519909485723649, "text": "RT @Le360fr: 🇲🇦 | À Dakhla, les habitants du Sahara célèbrent la victoire du Maroc contre l\u2019Espagne\n\n📍 Dakhla 🇲🇦 https://t.co/KH0QKuBVSV", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TheSaudisNFT: ⚽️FIFA World Cup Giveaway ⚽️
+
+Morocco vs Portugal on Saturday 🇲🇦
+
+Winner gets a Saudi 🇸🇦
+
+To Participate
+
+1⃣ Follow 
+@The… sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 918489133550571520, "id": 1600519908621697025, "text": "RT @TheSaudisNFT: ⚽️FIFA World Cup Giveaway ⚽️\n\nMorocco vs Portugal on Saturday 🇲🇦\n\nWinner gets a Saudi 🇸🇦\n\nTo Participate\n\n1\u20E3 Follow \n@The\u2026", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @banks000007 @FabrizioRomano @RisingBallers_ Available Tickets For.
+Croatia 🇭🇷 Vs Brazil 🇧🇷 
+Netherlands 🇳🇱 Vs Argentina 🇦🇷 
+Morocco 🇲🇦 Vs Portugal 🇵🇹 
+England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Vs France 🇫🇷 
+Send me a dm if interested sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1510556711089852416, "id": 1600519908479082502, "text": "@banks000007 @FabrizioRomano @RisingBallers_ Available Tickets For.\nCroatia 🇭🇷 Vs Brazil 🇧🇷 \nNetherlands 🇳🇱 Vs Argentina 🇦🇷 \nMorocco 🇲🇦 Vs Portugal 🇵🇹 \nEngland 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Vs France 🇫🇷 \nSend me a dm if interested", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FusotaoProtocol: To welcome the quarter-finals of World Cup, 600 TAO rewards will be equally distributed to all winners who guess 4 win… sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 918039996354912258, "id": 1600519910727200769, "text": "RT @FusotaoProtocol: To welcome the quarter-finals of World Cup, 600 TAO rewards will be equally distributed to all winners who guess 4 win\u2026", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @IMGOLDENCARD @bts_bighit @HYBEOFFICIALtwt @BIGHIT_MUSIC We need the official account to retweet stories and achievements about Jungkook published by FIFA and media.
+We need the company to arrange activities and interviews for Jungkook after World Cup. @bts_bighit @HYBEOFFICIALtwt @BIGHIT_MUSIC 
+#FREEJUNGKOOK sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1266317130556817408, "id": 1600519909779202048, "text": "@IMGOLDENCARD @bts_bighit @HYBEOFFICIALtwt @BIGHIT_MUSIC We need the official account to retweet stories and achievements about Jungkook published by FIFA and media.\nWe need the company to arrange activities and interviews for Jungkook after World Cup. @bts_bighit @HYBEOFFICIALtwt @BIGHIT_MUSIC \n#FREEJUNGKOOK", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1244226595268759552, "id": 1600519909930258432, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @piersmorgan Did you interview any of the other bench players sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 96261366, "id": 1600519913533308928, "text": "@piersmorgan Did you interview any of the other bench players", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @MbuyiseniNdlozi Doesn’t change the facts that israel is the land of the Jews so this means actually nothing. sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1598877817877544961, "id": 1600519914862821378, "text": "@MbuyiseniNdlozi Doesn\u2019t change the facts that israel is the land of the Jews so this means actually nothing.", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @KAIS1011 @BajwaKehtaHaii And every team will be ready to come India,if you think like that ask your chairman why he is so desperate to have India-pak match in pak. as I know not even single team visited Pak for 10 years. sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1590985984962871297, "id": 1600519914431057920, "text": "@KAIS1011 @BajwaKehtaHaii And every team will be ready to come India,if you think like that ask your chairman why he is so desperate to have India-pak match in pak. as I know not even single team visited Pak for 10 years.", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Les supporters nigérians à l’université de Lagos après la qualification du Maroc au terme de la séance de TAB ! 😍🇳🇬🇲🇦 https://t.co/3gdDqfyBNY sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1498000731093315590, "id": 1600519912467927040, "text": "Les supporters nigérians à l\u2019université de Lagos après la qualification du Maroc au terme de la séance de TAB ! 😍🇳🇬🇲🇦 https://t.co/3gdDqfyBNY", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @_iH4CK_: @JarrNadjmuddean Setuju, our culture berbeza, sikit2 nak ikut barat, tgk cara Qatar handle world cup, they just outside people… sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 555261101, "id": 1600519914032615424, "text": "RT @_iH4CK_: @JarrNadjmuddean Setuju, our culture berbeza, sikit2 nak ikut barat, tgk cara Qatar handle world cup, they just outside people\u2026", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text En 2022 avec tes 4 pts tu serais même pas en huitièmes de finale https://t.co/KvrqJhD5gT https://t.co/CQAZGzGLNS sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1420104216287252494, "id": 1600519914485387266, "text": "En 2022 avec tes 4 pts tu serais même pas en huitièmes de finale https://t.co/KvrqJhD5gT https://t.co/CQAZGzGLNS", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @shreyan_x0x @sportbible Forgot to add Gakpo, Goncalo Ramos and Joao Felix mate. sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 569828209, "id": 1600519914007269378, "text": "@shreyan_x0x @sportbible Forgot to add Gakpo, Goncalo Ramos and Joao Felix mate.", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:43 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Omojuwa: Q: Why should YOU be voted as president?
+
+A: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn’t qualify. Now, N… sending to kafka topic twitter-topic
+2022-12-07 16:57:43 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 298923427, "id": 1600519912774148096, "text": "RT @Omojuwa: Q: Why should YOU be voted as president?\n\nA: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn\u2019t qualify. Now, N\u2026", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ActuFoot_: 56 des 64 matches de cette Coupe du monde ont été joués. 
+
+Plus que 8, et c'est fini. 😢💔 sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 717811579383848960, "id": 1600519912644026369, "text": "RT @ActuFoot_: 56 des 64 matches de cette Coupe du monde ont été joués. \n\nPlus que 8, et c'est fini. 😢💔", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text YEZZZZ https://t.co/Qm4n3VmCPJ sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1340416452503896064, "id": 1600519914812370944, "text": "YEZZZZ https://t.co/Qm4n3VmCPJ", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FabrizioRomano: Who’s gonna win the World Cup? 🏆👀 #Qatar2022 https://t.co/IdF9dooTDP sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 634667165, "id": 1600519912534966274, "text": "RT @FabrizioRomano: Who\u2019s gonna win the World Cup? 🏆👀 #Qatar2022 https://t.co/IdF9dooTDP", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Nouri, jamais esquecido. Poderia fazer parte desse grupo hoje. https://t.co/YEpquRGjNh sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 37929603, "id": 1600519911897501700, "text": "Nouri, jamais esquecido. Poderia fazer parte desse grupo hoje. https://t.co/YEpquRGjNh", "createdAt": 1670428657000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @_FarihaRashid_ Great thread sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1297184060310249473, "id": 1600519913839497216, "text": "@_FarihaRashid_ Great thread", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MuhammadSmiry: Palestine will be free! #morocco https://t.co/Be3mYEHKUu sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 722361185614495744, "id": 1600519916536283136, "text": "RT @MuhammadSmiry: Palestine will be free! #morocco https://t.co/Be3mYEHKUu", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @BlackNairobian @Itiswinny I agree but hapo kwa golden glove. Keeper wa Morocco sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1061881778128994304, "id": 1600519915978588165, "text": "@BlackNairobian @Itiswinny I agree but hapo kwa golden glove. Keeper wa Morocco", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @YounesZiani10 Alors je rectifie Mon tweet de base en parlant du match vs l'Espagne. J'aurai pas dû généraliser c'est vrai. Mais contre l'Espagne c'était très Portugal 2016. sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 535719473, "id": 1600519918507761665, "text": "@YounesZiani10 Alors je rectifie Mon tweet de base en parlant du match vs l'Espagne. J'aurai pas dû généraliser c'est vrai. Mais contre l'Espagne c'était très Portugal 2016.", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MountakhabOf: Les émotions de ce père et son fils devant la qualification du Maroc 🇲🇦🇲🇦🇲🇦🇲🇦🇲🇦🥹🥹🥹🥹🥹🥹
+
+Via @Hakimpp60 ! 
+
+https://t.co/nd… sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1131576468356648961, "id": 1600519916326719488, "text": "RT @MountakhabOf: Les émotions de ce père et son fils devant la qualification du Maroc 🇲🇦🇲🇦🇲🇦🇲🇦🇲🇦🥹🥹🥹🥹🥹🥹\n\nVia @Hakimpp60 ! \n\nhttps://t.co/nd\u2026", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @bouliboulibouli: L'assimilation marche aussi bien en Espagne qu'en France :
+https://t.co/W6WOKRVBmq sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 762082772945174528, "id": 1600519916758749188, "text": "RT @bouliboulibouli: L'assimilation marche aussi bien en Espagne qu'en France :\nhttps://t.co/W6WOKRVBmq", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @katze_ktz @brfootball skskskkkkkk sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 593080907, "id": 1600519916796477440, "text": "@katze_ktz @brfootball skskskkkkkk", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @dialectichiphop: Again, if this world cup has done anything it's reaffirmed how deeply imbedded the idea of Palestinian liberation and… sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1407268609647255555, "id": 1600519919090954240, "text": "RT @dialectichiphop: Again, if this world cup has done anything it's reaffirmed how deeply imbedded the idea of Palestinian liberation and\u2026", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Keep your T-levels Optimized with Aphro-D!!
+Check the link in the bio to learn more 👆
+
+#testosterone #Morocco #healthcare #health #healthylifestyle #HealthForAll #Wednesday https://t.co/WHwONcb4QW sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1560921531051814912, "id": 1600519914565296128, "text": "Keep your T-levels Optimized with Aphro-D!!\nCheck the link in the bio to learn more 👆\n\n#testosterone #Morocco #healthcare #health #healthylifestyle #HealthForAll #Wednesday https://t.co/WHwONcb4QW", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: Achraf Hakimi was born and raised in Spain and grew up in Real Madrid's academy.
+
+He just sent Spain out of the World Cup with… sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 851225858, "id": 1600519917585182720, "text": "RT @ESPNFC: Achraf Hakimi was born and raised in Spain and grew up in Real Madrid's academy.\n\nHe just sent Spain out of the World Cup with\u2026", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @FionnOnFire Morroco 100 percent sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1471295074298441730, "id": 1600519917807308802, "text": "@FionnOnFire Morroco 100 percent", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @souleyyk: Pedri et Gavi ce soir face au Maroc https://t.co/LmZ8U3mhpL sending to kafka topic twitter-topic
+2022-12-07 16:57:44 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1111694654527946752, "id": 1600519916511268864, "text": "RT @souleyyk: Pedri et Gavi ce soir face au Maroc https://t.co/LmZ8U3mhpL", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: When you realise there's ZERO World Cup games to watch today 😬 https://t.co/yDwySMx6Mv sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1428926359, "id": 1600519915592720385, "text": "RT @ESPNFC: When you realise there's ZERO World Cup games to watch today 😬 https://t.co/yDwySMx6Mv", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @_BeFootball Le gardien marocain était sur un nuage. sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1358424647637819392, "id": 1600519919292096518, "text": "@_BeFootball Le gardien marocain était sur un nuage.", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Record_Sport Brazil sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1589409634909036545, "id": 1600519919539523584, "text": "@Record_Sport Brazil", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ESPNFC: None of these winning sides have won a World Cup knockout game since lifting the trophy 🤯 https://t.co/c1O9oPC2nT sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1517478438365536259, "id": 1600519918100914176, "text": "RT @ESPNFC: None of these winning sides have won a World Cup knockout game since lifting the trophy 🤯 https://t.co/c1O9oPC2nT", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @accouchee Now I understand. Thanks for the explanation. sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 977713258302922752, "id": 1600519917131816961, "text": "@accouchee Now I understand. Thanks for the explanation.", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ActuFoot_: Les cotes @Betclic pour le vainqueur de la Coupe du monde 2022 :
+
+2,75 🇧🇷 Brésil
+5 🇫🇷 France
+7 🇦🇷 Argentine
+7 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglet… sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 624246248, "id": 1600519916418994178, "text": "RT @ActuFoot_: Les cotes @Betclic pour le vainqueur de la Coupe du monde 2022 :\n\n2,75 🇧🇷 Brésil\n5 🇫🇷 France\n7 🇦🇷 Argentine\n7 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglet\u2026", "createdAt": 1670428658000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @433: No World Cup for the next 2️⃣ days.. https://t.co/03y6W8wqNa sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1332006124409786376, "id": 1600519921477246984, "text": "RT @433: No World Cup for the next 2️\u20E3 days.. https://t.co/03y6W8wqNa", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @dmsportma: 🎙️ | Bilal El Khannouss :
+
+« Le coach nous a montré une vidéo du Maroc lors du Mondial mexicain de 1986, il y a eu une petit… sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1407745109022621700, "id": 1600519921116618756, "text": "RT @dmsportma: 🎙️ | Bilal El Khannouss :\n\n« Le coach nous a montré une vidéo du Maroc lors du Mondial mexicain de 1986, il y a eu une petit\u2026", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @JerryAldini1010 @JeffreyCarlisle Barely qualified for World Cup, barely got out of group, got man handled v any squad that more talent sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 323020438, "id": 1600519921775042562, "text": "@JerryAldini1010 @JeffreyCarlisle Barely qualified for World Cup, barely got out of group, got man handled v any squad that more talent", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Mark my words, Portugal vs. Morocco match will be lit. 
+
+Africa will be on standstills.hdvfb sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 957125213547847681, "id": 1600519923637305352, "text": "Mark my words, Portugal vs. Morocco match will be lit. \n\nAfrica will be on standstills.hdvfb", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @HotepSun Lol have you not seen the stunt Morocco has pulled after winning jana????? sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 202659738, "id": 1600519923649896448, "text": "@HotepSun Lol have you not seen the stunt Morocco has pulled after winning jana?????", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @BrunoRetailleau #AnniversaireReconquete https://t.co/3dZJqhyUT9 sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1485905005680988161, "id": 1600519920357445644, "text": "@BrunoRetailleau #AnniversaireReconquete https://t.co/3dZJqhyUT9", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @castrofy26 united still being mentioned nani world cup big club it is 😂😂😂 sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 290480239, "id": 1600519920390922244, "text": "@castrofy26 united still being mentioned nani world cup big club it is 😂😂😂", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @TimesLIVE HEY Friends, have you tried out investing Bitcoin with SIR @Andreasjeremy0?? Are you tired of  sending cash to account Managers in order for them to  trade on your behalf???  DM  @Andreasjeremy0 for an expertise training  and thank me later 🤞💪🥰 sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1306959563472732172, "id": 1600519923721293825, "text": "@TimesLIVE HEY Friends, have you tried out investing Bitcoin with SIR @Andreasjeremy0?? Are you tired of  sending cash to account Managers in order for them to  trade on your behalf???  DM  @Andreasjeremy0 for an expertise training  and thank me later 🤞💪🥰", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @riffflawyer: Instead of spreading FAKE news re Cristiano, Spanish media should focus on why their team is out of the World Cup. All tha… sending to kafka topic twitter-topic
+2022-12-07 16:57:45 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1247359779074342912, "id": 1600519923276685312, "text": "RT @riffflawyer: Instead of spreading FAKE news re Cristiano, Spanish media should focus on why their team is out of the World Cup. All tha\u2026", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brfootball: World Cup scorers by club:
+
+PSG: 10
+Barcelona: 8
+Chelsea: 6
+Manchester City: 6
+Manchester United: 6
+Milan: 5
+Tottenham: 5
+A… sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1480300709128118280, "id": 1600519923532455939, "text": "RT @brfootball: World Cup scorers by club:\n\nPSG: 10\nBarcelona: 8\nChelsea: 6\nManchester City: 6\nManchester United: 6\nMilan: 5\nTottenham: 5\nA\u2026", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @AuschwitzMuseum: 7 December 1907 | A French Jew, Leon Offenthal, was born in Paris. He worked in Morocco as a leather tanner and trader… sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1331939126019493889, "id": 1600519923750559744, "text": "RT @AuschwitzMuseum: 7 December 1907 | A French Jew, Leon Offenthal, was born in Paris. He worked in Morocco as a leather tanner and trader\u2026", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Muslim: Morocco. MashaAllah 🇲🇦☝🏽 https://t.co/XD9kWqy1VK sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 731729834036977664, "id": 1600519922840662021, "text": "RT @Muslim: Morocco. MashaAllah 🇲🇦☝🏽 https://t.co/XD9kWqy1VK", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ♥️ https://t.co/13iDvBdGKv sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1063392045887303680, "id": 1600519922613977089, "text": "♥️ https://t.co/13iDvBdGKv", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I love this take, which is also mine. And is vanishingly rare in the, umm, maelstrom that is USMNT Twitter. (And the comment sections in places like The Athletic.) https://t.co/gecYzjABwM sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 50705273, "id": 1600519921141702659, "text": "I love this take, which is also mine. And is vanishingly rare in the, umm, maelstrom that is USMNT Twitter. (And the comment sections in places like The Athletic.) https://t.co/gecYzjABwM", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @kwabenaOEM @gyaigyimii I swear 😂 sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1492660221306712069, "id": 1600519923469516800, "text": "@kwabenaOEM @gyaigyimii I swear 😂", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ActuFoot_: 56 des 64 matches de cette Coupe du monde ont été joués. 
+
+Plus que 8, et c'est fini. 😢💔 sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 993619187099754497, "id": 1600519926355316738, "text": "RT @ActuFoot_: 56 des 64 matches de cette Coupe du monde ont été joués. \n\nPlus que 8, et c'est fini. 😢💔", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text NEW: 🚨 Sofyan Amrabat's entourage met Jurgen Klopp before the World Cup. Liverpool have agreed to talk to Amrabat’s representative again after the World Cup. [@Santi_J_FM]
+❤️❤️YNWA ❤️❤️ https://t.co/WUhB3rxVyS sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1456001603975139333, "id": 1600519924820152324, "text": "NEW: 🚨 Sofyan Amrabat's entourage met Jurgen Klopp before the World Cup. Liverpool have agreed to talk to Amrabat\u2019s representative again after the World Cup. [@Santi_J_FM]\n❤️❤️YNWA ❤️❤️ https://t.co/WUhB3rxVyS", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @francoisedegois: Et transformer la liesse et quelques tensions à #Lille en guérilla urbaine , y’a que Fox News , le #RN les #Zemmour et… sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 713266013, "id": 1600519925726171139, "text": "RT @francoisedegois: Et transformer la liesse et quelques tensions à #Lille en guérilla urbaine , y\u2019a que Fox News , le #RN les #Zemmour et\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @afcstuff: A very shy Bukayo Saka asking David Beckham for a picture during the England icon’s visit to their World Cup training base in… sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1461439604461117446, "id": 1600519925189120000, "text": "RT @afcstuff: A very shy Bukayo Saka asking David Beckham for a picture during the England icon\u2019s visit to their World Cup training base in\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @zCloakNetwork: Welcome to the world’s 1st World Cup zk-guessing event! Big thanks to our partner projects @Legal_DAO @Web3Go @BuidlerDA… sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 830080597989089280, "id": 1600519927064326144, "text": "RT @zCloakNetwork: Welcome to the world\u2019s 1st World Cup zk-guessing event! Big thanks to our partner projects @Legal_DAO @Web3Go @BuidlerDA\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @MoorishMovement 😂😂 غنربحو البرطقيز ان شاء الله sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1344950781951299584, "id": 1600519924698562565, "text": "@MoorishMovement 😂😂 غنربحو البرطقيز ان شاء الله", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Ozz4PF: It’s actually crazy to see Morocco amongst these great teams https://t.co/jSvh9NIiwn sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 864917624, "id": 1600519924371406850, "text": "RT @Ozz4PF: It\u2019s actually crazy to see Morocco amongst these great teams https://t.co/jSvh9NIiwn", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @OmbetaC Unfortunately the country can't be removed from the continent Africa😂😂😂😂😂😂 sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 202659738, "id": 1600519923612131328, "text": "@OmbetaC Unfortunately the country can't be removed from the continent Africa😂😂😂😂😂😂", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text A force de quémander qu’on vous y insère vous récoltez que de la pitié. C’est bien ce qui se passe avec ce post 🤣 https://t.co/JBMwiyy6r6 sending to kafka topic twitter-topic
+2022-12-07 16:57:46 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2548057694, "id": 1600519924295733248, "text": "A force de quémander qu\u2019on vous y insère vous récoltez que de la pitié. C\u2019est bien ce qui se passe avec ce post 🤣 https://t.co/JBMwiyy6r6", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text 🙌 🙏 https://t.co/rW0tUGbwpf sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2752697098, "id": 1600519924887216132, "text": "🙌 🙏 https://t.co/rW0tUGbwpf", "createdAt": 1670428660000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @zCloakNetwork: Set a reminder for our Discord general voice channel tomorrow at 8pm UTC+8 for Chinese AMA, and 9pm UTC+8 for English! S… sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1522839973619187712, "id": 1600519926045110273, "text": "RT @zCloakNetwork: Set a reminder for our Discord general voice channel tomorrow at 8pm UTC+8 for Chinese AMA, and 9pm UTC+8 for English! S\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @NEWS_BILAWAL: Foreign Minister Bilawal Bhutto Zardari thanked Qatar's Foreign Minister for inviting him to the FIFA World Cup He also i… sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1140381216362905600, "id": 1600519926183256064, "text": "RT @NEWS_BILAWAL: Foreign Minister Bilawal Bhutto Zardari thanked Qatar's Foreign Minister for inviting him to the FIFA World Cup He also i\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain’t easy 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1600459556408025089, "id": 1600519925998624768, "text": "RT @UTDTrey: After 17 days of beautiful World Cup football, no football today hits hard man. It ain\u2019t easy 😭", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text C'est un vrai barrage d'Assif n'mrbi3 !!! Bien à lui ... !!! AA https://t.co/3uJ7sUWSiQ sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4612510335, "id": 1600519928917925895, "text": "C'est un vrai barrage d'Assif n'mrbi3 !!! Bien à lui ... !!! AA https://t.co/3uJ7sUWSiQ", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Crazy_Milanista: Today I feel Italian (no world cup games) sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2470241208, "id": 1600519930608484352, "text": "RT @Crazy_Milanista: Today I feel Italian (no world cup games)", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @marwasf: It’s hard for me to rejoice seeing this while Morocco is occupying and oppressing another people.
+
+I have zero doubt about the… sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1209068499055906818, "id": 1600519929748459522, "text": "RT @marwasf: It\u2019s hard for me to rejoice seeing this while Morocco is occupying and oppressing another people.\n\nI have zero doubt about the\u2026", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ZainAli06063873 @sutli_bob @hazharoon Sirf khelna nai jeetna bhi padta hai. when was the last time you won the 50 Over World Cup? sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 711387897010786304, "id": 1600519930306527233, "text": "@ZainAli06063873 @sutli_bob @hazharoon Sirf khelna nai jeetna bhi padta hai. when was the last time you won the 50 Over World Cup?", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1150062605735776256, "id": 1600519930876948481, "text": "RT @HasbullaHive: Me coming out of the work bathroom after watching the World Cup on the toilet for 90 mins https://t.co/kfB2R2hmfZ", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @F_Desouche @GuzmanStephane Très bonne décision…,, sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 510332094, "id": 1600519932202156032, "text": "@F_Desouche @GuzmanStephane Très bonne décision\u2026,,", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ZohraBitan Oui oui https://t.co/CS9NSX6H1N sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1204947877149233152, "id": 1600519928930570241, "text": "@ZohraBitan Oui oui https://t.co/CS9NSX6H1N", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TFT_Morocco: Sofyan Amrabat sur Instagram 😭
+
+On espère que le sale gamin turbulent de Gavi a retenu la leçon. https://t.co/nmIA9YkWvh sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1327948912410456064, "id": 1600519931946303494, "text": "RT @TFT_Morocco: Sofyan Amrabat sur Instagram 😭\n\nOn espère que le sale gamin turbulent de Gavi a retenu la leçon. https://t.co/nmIA9YkWvh", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Rohantweetss: Shreyas Iyer and Shubman Gill have been the most consistent Indian batters in ODI's in 2022. 
+Iyer is sealing his place f… sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1296336011178307584, "id": 1600519931262513153, "text": "RT @Rohantweetss: Shreyas Iyer and Shubman Gill have been the most consistent Indian batters in ODI's in 2022. \nIyer is sealing his place f\u2026", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Voilà dit bien https://t.co/3n2mAIpVw8 sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1167690879705976832, "id": 1600519916842614785, "text": "Voilà dit bien https://t.co/3n2mAIpVw8", "createdAt": 1670428659000}' to topic='twitter-topic'
+2022-12-07 16:57:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Oh, but when will the US finally take their place among the world's best??? https://t.co/1Y6DbYROaI sending to kafka topic twitter-topic
+2022-12-07 16:57:47 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2229239118, "id": 1600519930297962499, "text": "Oh, but when will the US finally take their place among the world's best??? https://t.co/1Y6DbYROaI", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:48 [SpringContextShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-12-07 16:57:48 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Abel_Olabode @daddy_kross This boy already have a 100 million release clause in his contract sha, currently playing well for Benfica in the league and UCL so even without the World Cup he wouldn’t be going for cheap. sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4855224039, "id": 1600519930931286017, "text": "@Abel_Olabode @daddy_kross This boy already have a 100 million release clause in his contract sha, currently playing well for Benfica in the league and UCL so even without the World Cup he wouldn\u2019t be going for cheap.", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-12-07 16:57:49 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-07 16:57:49 [main] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2022-12-07 16:57:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-07 16:57:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-07 16:57:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1670428669584
+2022-12-07 16:57:49 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: OVUwHNtMQ0SgKtfXZ_bRmg
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @OnePathNetwork: #morocco opened their game with Surah Al-Fatiha, eventually leading to their 3-0 [PEN] win against Spain! 
+🇲🇦🤲🏼❤️ https… sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1037588372103946241, "id": 1600519927102050304, "text": "RT @OnePathNetwork: #morocco opened their game with Surah Al-Fatiha, eventually leading to their 3-0 [PEN] win against Spain! \n🇲🇦🤲🏼❤️ https\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CrepinMael: PAS UN tweet afin de féliciter l’Équipe de France pour leurs victoires, mais un tweet en arabe pour célébrer la victoire du… sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1511769241149714433, "id": 1600519930599841792, "text": "RT @CrepinMael: PAS UN tweet afin de féliciter l\u2019Équipe de France pour leurs victoires, mais un tweet en arabe pour célébrer la victoire du\u2026", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Ebe4Eva Who's gonna commentate the game for Portugal vs Morocco sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1577628133603278848, "id": 1600519932441157633, "text": "@Ebe4Eva Who's gonna commentate the game for Portugal vs Morocco", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MookieBarbu: On rêve d’une demi-finale de Coupe du Monde entre ces 2 frères. 
+
+@KMbappe x @AchrafHakimi https://t.co/qYwN3AwUBp sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1268133544288817152, "id": 1600519935540731909, "text": "RT @MookieBarbu: On rêve d\u2019une demi-finale de Coupe du Monde entre ces 2 frères. \n\n@KMbappe x @AchrafHakimi https://t.co/qYwN3AwUBp", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TrollFootball: Arabs with Morocco
+
+https://t.co/TYbwznHyLN sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1551520695670251520, "id": 1600519934303506433, "text": "RT @TrollFootball: Arabs with Morocco\n\nhttps://t.co/TYbwznHyLN", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Crazy_Milanista: Today I feel Italian (no world cup games) sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 581278081, "id": 1600519933439401984, "text": "RT @Crazy_Milanista: Today I feel Italian (no world cup games)", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @UTDTrey Bro we've got our team playing friendly game today, cheer up lad sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1569491461778903040, "id": 1600519932873216000, "text": "@UTDTrey Bro we've got our team playing friendly game today, cheer up lad", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Muzuzxck: Berita duka.
+
+Pemergian Ulama’ hadith, Syeikh Abdul Rahman al-Kattani رَحِمَهُ الله, seorang permata dari bumi Maghribi atau… sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1184584358, "id": 1600519927034970112, "text": "RT @Muzuzxck: Berita duka.\n\nPemergian Ulama\u2019 hadith, Syeikh Abdul Rahman al-Kattani رَحِمَهُ الله, seorang permata dari bumi Maghribi atau\u2026", "createdAt": 1670428661000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @denvern3 Can't they go and leave the land... We can relocate the camels in Australia to that desert sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 937621366165180416, "id": 1600519933099741184, "text": "@denvern3 Can't they go and leave the land... We can relocate the camels in Australia to that desert", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @shailjapatel: Not saying don't celebrate Morocco's win. I'm saying: we can walk and chew gum at the same time. I'm saying that true ant… sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 832927005331058693, "id": 1600519935939198976, "text": "RT @shailjapatel: Not saying don't celebrate Morocco's win. I'm saying: we can walk and chew gum at the same time. I'm saying that true ant\u2026", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Rohit may bring hamstring injury or STOMACH PAIN in 2023 odi World Cup. Better prepare now for it.
+#indvsbang #captaincy #RohitSharma #BCCI sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1575571473825005568, "id": 1600519934903099392, "text": "Rohit may bring hamstring injury or STOMACH PAIN in 2023 odi World Cup. Better prepare now for it.\n#indvsbang #captaincy #RohitSharma #BCCI", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @OmbetaC Politics aside if Morocco advance we Africa have a chance to get more slots of the 32 slots available. Currently only 5 slots were allocated to CAF. Africa needs to support Morocco. sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 470200634, "id": 1600519932319567872, "text": "@OmbetaC Politics aside if Morocco advance we Africa have a chance to get more slots of the 32 slots available. Currently only 5 slots were allocated to CAF. Africa needs to support Morocco.", "createdAt": 1670428662000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Geronimuslll: Espagne: Elle filme la célébration des marocains. La fin de l'histoire va vous surprendre. #MARESP https://t.co/LM4sYXM7yC sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 232516657, "id": 1600519935712804867, "text": "RT @Geronimuslll: Espagne: Elle filme la célébration des marocains. La fin de l'histoire va vous surprendre. #MARESP https://t.co/LM4sYXM7yC", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @tbfcai: No World Cup football for 2 days while we await the quarterfinals. I'm going through withdrawals. sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 49548379, "id": 1600519936878809088, "text": "RT @tbfcai: No World Cup football for 2 days while we await the quarterfinals. I'm going through withdrawals.", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Francis_Kayamba @brfootball They literally said they playing for Africa sending to kafka topic twitter-topic
+2022-12-07 16:57:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1594289562339123201, "id": 1600519936937533441, "text": "@Francis_Kayamba @brfootball They literally said they playing for Africa", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Fernandez_beIN: Quelle performance incroyable du Maroc 🇲🇦, bravo à eux , la rigueur tactique, les courses ils ont été énormes .. je sui… sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1588999293297463298, "id": 1600519937117806592, "text": "RT @Fernandez_beIN: Quelle performance incroyable du Maroc 🇲🇦, bravo à eux , la rigueur tactique, les courses ils ont été énormes .. je sui\u2026", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @OmbetaC They are still in Africa continent sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1574049193680830466, "id": 1600519939122925568, "text": "@OmbetaC They are still in Africa continent", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @brfootball: A massive moment for Morocco. https://t.co/DzPTMJraUJ sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1260593865398136832, "id": 1600519940255236096, "text": "RT @brfootball: A massive moment for Morocco. https://t.co/DzPTMJraUJ", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @ManCityMEN Oops 🇪🇦🤭 sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 250293977, "id": 1600519939709980672, "text": "@ManCityMEN Oops 🇪🇦🤭", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Omojuwa: Q: Why should YOU be voted as president?
+
+A: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn’t qualify. Now, N… sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1414966734, "id": 1600519938095071232, "text": "RT @Omojuwa: Q: Why should YOU be voted as president?\n\nA: In 1994, Nigeria almost made the quarterfinals, Bangladesh didn\u2019t qualify. Now, N\u2026", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @francoisedegois Si si il y’a eu de la casse… malhonnête sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2933865777, "id": 1600519940578082816, "text": "@francoisedegois Si si il y\u2019a eu de la casse\u2026 malhonnête", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @sparxx111588: People shouting: Morocco doing it For Africa
+Meanwhile Morocco: no Papi I no black, I Dominican . sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4645702174, "id": 1600519937017225216, "text": "RT @sparxx111588: People shouting: Morocco doing it For Africa\nMeanwhile Morocco: no Papi I no black, I Dominican .", "createdAt": 1670428663000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @MarionMarechal: Après la victoire du Maroc, nos villes ont été la proie d’agressions, de dégradations, de casse, de violences, de rodéo… sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 367081128, "id": 1600519939747680259, "text": "RT @MarionMarechal: Après la victoire du Maroc, nos villes ont été la proie d\u2019agressions, de dégradations, de casse, de violences, de rodéo\u2026", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Samuel_Lafont Salauds de supporters anglais ? sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 124879780, "id": 1600519938439106560, "text": "@Samuel_Lafont Salauds de supporters anglais ?", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text فرحة هستيرية لصحفي مغربي من داخل ملعب مباراة المغرب -اسبانيا
+#Marruecos #Morocco
+#FIFAWorldCup #QatarWorldCup2022 #FIFAWorldCup2022
+#espanavsmarruecos #Espana
+#المغرب_اسبانيا #المغرب #كأس_العالم_قطر_2022 #كاس_العالم_FIFA https://t.co/Xrai2QsZpy sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2237004262, "id": 1600519937822449664, "text": "فرحة هستيرية لصحفي مغربي من داخل ملعب مباراة المغرب -اسبانيا\n#Marruecos #Morocco\n#FIFAWorldCup #QatarWorldCup2022 #FIFAWorldCup2022\n#espanavsmarruecos #Espana\n#المغرب_اسبانيا #المغرب #كأس_العالم_قطر_2022 #كاس_العالم_FIFA https://t.co/Xrai2QsZpy", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @TheSadioMane: We're all Morocco once again. Let's go! 💪🏿💪🏿
+#OneAfrica sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2158690801, "id": 1600519942356574210, "text": "RT @TheSadioMane: We're all Morocco once again. Let's go! 💪🏿💪🏿\n#OneAfrica", "createdAt": 1670428665000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @FabrizioRomano: World Cup quarter-finals 🚨🏆
+
+▫️ Netherlands 🇳🇱 vs 🇦🇷 Argentina
+
+▫️ Brazil 🇧🇷 vs 🇭🇷 Croatia
+
+▫️ England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇫🇷 Fr… sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 754322609836261376, "id": 1600519940842332160, "text": "RT @FabrizioRomano: World Cup quarter-finals 🚨🏆\n\n▫️ Netherlands 🇳🇱 vs 🇦🇷 Argentina\n\n▫️ Brazil 🇧🇷 vs 🇭🇷 Croatia\n\n▫️ England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 🇫🇷 Fr\u2026", "createdAt": 1670428664000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @cr7raprhymes: @UtdOptimist The guy in your avi was left out of the World Cup squad at 32 yrs old 😭 sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 814974210246377472, "id": 1600519943572918273, "text": "RT @cr7raprhymes: @UtdOptimist The guy in your avi was left out of the World Cup squad at 32 yrs old 😭", "createdAt": 1670428665000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I poured my heart into a post on African deserts, a World Cup upset, and my hopes of travels, so please read. I promise you'll enjoy it. Especially you #RootRootRead fans because I review a book called The Actual True Story of Ahmed and Zarga. https://t.co/PFvMzibBcb sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 62118848, "id": 1600519943438700548, "text": "I poured my heart into a post on African deserts, a World Cup upset, and my hopes of travels, so please read. I promise you'll enjoy it. Especially you #RootRootRead fans because I review a book called The Actual True Story of Ahmed and Zarga. https://t.co/PFvMzibBcb", "createdAt": 1670428665000}' to topic='twitter-topic'
+2022-12-07 16:57:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @CCupo Hahaha well today there is no World Cup so perfect chance 😂 sending to kafka topic twitter-topic
+2022-12-07 16:57:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 352477369, "id": 1600519942000214017, "text": "@CCupo Hahaha well today there is no World Cup so perfect chance 😂", "createdAt": 1670428665000}' to topic='twitter-topic'
+2022-12-07 17:00:50 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-07 17:00:55 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: 500 : [{"timestamp":"2022-12-07T16:00:55.941+00:00","status":500,"error":"Internal Server Error","message":"","path":"/twitter-to-kafka-service,config-client/twitter_to_kafka"}]
+2022-12-07 17:00:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - The following profiles are active: twitter_to_kafka
+2022-12-07 17:00:56 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+2022-12-07 17:00:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:29)
+Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 27 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:135)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:121)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:62)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:49)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:147)
+	... 30 common frames omitted
+2022-12-07 17:07:40 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-07 17:07:45 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: 500 : [{"timestamp":"2022-12-07T16:07:45.337+00:00","status":500,"error":"Internal Server Error","message":"","path":"/twitter-to-kafka-service,config-client/twitter_to_kafka"}]
+2022-12-07 17:07:45 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaApplication - The following profiles are active: twitter_to_kafka
+2022-12-07 17:07:45 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+2022-12-07 17:07:45 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Lenovo\Documents\workspaceIDE\microservices-demo\twitter-to-kafka-service\target\classes\com\microservices\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunner.class]; nested exception is java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaApplication.main(TwitterToKafkaApplication.java:29)
+Caused by: java.lang.IllegalStateException: Error processing condition on com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.evaluateExpression(OnExpressionCondition.java:60)
+	at org.springframework.boot.autoconfigure.condition.OnExpressionCondition.getMatchOutcome(OnExpressionCondition.java:48)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 27 common frames omitted
+Caused by: org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'lcurly({)'
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:135)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61)
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpressions(TemplateAwareExpressionParser.java:121)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseTemplate(TemplateAwareExpressionParser.java:62)
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:49)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:147)
+	... 30 common frames omitted
